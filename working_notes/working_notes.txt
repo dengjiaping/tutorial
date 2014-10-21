@@ -1,0 +1,69 @@
+1. 微网站自动化测试
+  API --测试
+  测试用例 补全
+  监控测试用例及时反馈
+  手机、移动端测试
+  流程管理
+2. 主站
+  1. 需求、工作量管理
+  2. 工作安排和分工
+  3. 性能测试
+  4. 自动化测试分模块
+3. 性能测试
+  1. 性能基线
+  2. 性能测试环境
+  3. 性能测试场景安排
+  4. 性能测试Jmeter、loadrunner
+-----------------------------------------------
+todoList:
+1. 自动化测试 基础构建
+   testng, log, yml, htppclient/json/scurity issue/jesery client, report
+   logging 接口确定
+2. 业务分模块
+   Login：
+   精选
+   散投
+
+   移动端/客户端/微信测试
+3. 流程建立
+	A> 测试流程
+	    测试用例补全
+	B> 代码提交/发布流程/JIRA 控制/变更管理
+	C> 外包管理：测试用例review/UAT控制/UAT测试管理/UAT使用
+4. 测试环境
+5. JIRA configuration
+-------------------
+NONObank2013
+172.16.0.68
+-------------------------
+http://jmeter.apache.org/usermanual/jmeter_proxy_step_by_step.pdf
+http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Proxy_Server
+
+
+
+1.Apache: sebug 
+2.Apache configuration
+3.banner信息
+  ServerTokensOS -> ServerTokensProd
+  ServerSignatureOn ->ServerSignatureOff
+4.Apache 单独用户组
+5.Apache写入目录权限 -- 上传目录放到外面 -- Webshell
+6.关闭.htaccess
+7.mysql: 单独账户
+8.shell登陆
+9.管理员账户：shell
+10.mysql端口IP限制
+11.修改端口：3306
+12.Root强密码
+13.删除无用数据库
+
+Acunetix Web Vulnerability scanner
+1. 慢攻击
+2. 中国菜刀
+3. DVWA
+4. sqlmap
+5. burpsuite
+6. x-forward
+----------------------------------------------------
+'{$a}'
+mysql 转义

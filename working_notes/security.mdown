@@ -1,0 +1,38 @@
+PHP 安全测试
+===============
+### SQL注入漏洞
+.输入过滤
+	php invert()
+	select * from admin where username=‘admin' or 1=1#' and password ='123'
+.Cookie注入
+	sqlmap
+.Referer 注入
+.X-Forwarded-For注入
+. GBK注入、binary
+. http header 
+
+### 文件上传漏洞
+.黑名单
+.白名单
+.%00
+.IIS解析漏洞
+.ngix 解析漏洞  /.php  
+.apache 
+白名单
+上传随机生成文件名
+上传目录不可执行
+%00
+
+### 逻辑漏洞
+ . 服务端校验
+ . 找回密码  //code
+ . 
+### 变量覆盖
+### 文件包含
+### XSS
+### 敏感信息泄露
+### 任意文件读写
+
+### OWASP Top 100
+
+### Guide Line
