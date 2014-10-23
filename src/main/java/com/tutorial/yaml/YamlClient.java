@@ -14,15 +14,19 @@ import java.util.Map;
 /**
  * convert YAML document to a JAVA object
  */
-public class YamlSimple {
-    private static final Logger logger = LogManager.getLogger(YamlSimple.class.getName());
+public class YamlClient {
+    private static final Logger logger = LogManager.getLogger(YamlClient.class.getName());
     private Yaml yaml ;
 
-    public YamlSimple() {
+    public static YamlClient getInstance(){
+        return new YamlClient();
+    }
+
+    private YamlClient() {
         this.yaml = new Yaml();
     }
 
-    public List<String> parser(String documents){
+    public List<String> parserForList(String documents){
         return (List<String>) yaml.load(documents);
     }
     public String parserForString(String document){
@@ -32,17 +36,34 @@ public class YamlSimple {
     public Map parserForMap(String document){
         return (Map) yaml.load(document);
     }
+
+    /**
+     * Yaml.load() accepts a String or an InputStream object. Yaml.load(InputStream stream)
+     * detects the encoding by checking the BOM (byte order mark)
+     * sequence at the beginning of the stream. If no BOM is present, the utf-8 encoding is assumed.
+     * @param documents
+     * @return
+     */
+    public Object parser(String documents){
+        return yaml.load(documents);
+    }
+
+    public Iterable<Object> parserAll(String document){
+        return yaml.loadAll(document);
+    }
     public static void main(String[] args) throws FileNotFoundException {
         String document = "\n- Hesperiidae\n- Papilionidae\n- Apatelodidae\n- Epiplemidae";
-        YamlSimple y = new YamlSimple();
+        YamlClient y = new YamlClient();
         logger.info("list is {}", y.parser(document));
         //logger.info("string is {}",y.parserForString(document));
 
         String mapper = "hello: 25"; // empty
         logger.info("mapper is {}",y.parserForMap(mapper));
 
-        String path = ClassLoader.getSystemClassLoader().getResource("").getPath()+"yaml/nestcollection.yaml";
+        String path = ClassLoader.getSystemClassLoader().getResource("").getPath()+"yaml\\nestcollection.yaml";
         InputStream in = new FileInputStream(new File(path));
-        logger.info("yaml is ",y.yaml.load(in));
+        logger.info("YAML is ",y.yaml.load(in));
     }
+
+
 }
