@@ -3,6 +3,7 @@ package com.tutorial.yaml;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,8 +23,16 @@ public class YamlClient {
         return new YamlClient();
     }
 
+    public static YamlClient getInstance(Class clazz){
+        return new YamlClient(clazz);
+    }
+
     private YamlClient() {
         this.yaml = new Yaml();
+    }
+
+    private YamlClient(Class clazz){
+        this.yaml = new Yaml(new Constructor(clazz));
     }
 
     public List<String> parserForList(String documents){
@@ -47,6 +56,7 @@ public class YamlClient {
     public Object parser(String documents){
         return yaml.load(documents);
     }
+
 
     public Iterable<Object> parserAll(String document){
         return yaml.loadAll(document);

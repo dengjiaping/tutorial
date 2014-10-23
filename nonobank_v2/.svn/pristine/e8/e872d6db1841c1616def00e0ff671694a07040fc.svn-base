@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/nono-data.iml" filepath="$PROJECT_DIR$/nono-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nono-data-dcl/nono-data-dcl.iml" filepath="$PROJECT_DIR$/nono-data-dcl/nono-data-dcl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nono-data-parent/nono-data-parent.iml" filepath="$PROJECT_DIR$/nono-data-parent/nono-data-parent.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,12 @@
+[#ftl]
+[#-- @implicitly included --]
+[#-- @ftlvariable name="request" type="javax.servlet.http.HttpServletRequest" --]
+[#-- @ftlroot "../webapp/WEB-INF/views" --]
+[#-- @ftlvariable name="appConfigure" type="com.nonobank.web.config.WebAppConfigure" --]
+[#-- @ftlvariable name="pageCssLinks" type="java.lang.String" --]
+[#-- @ftlvariable name="pageCommonTitle" type="java.lang.String" --]
+[#-- @ftlvariable name="pageTitle" type="java.lang.String" --]
+[#-- @ftlvariable name="bodyProperties" type="java.lang.String" --]
+[#-- @ftlvariable name="pageScripts" type="java.lang.String" --]
+
+[#macro message code][/#macro]

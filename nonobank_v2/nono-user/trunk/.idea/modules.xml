@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/nono-user.iml" filepath="$PROJECT_DIR$/nono-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nono-user-api/nono-user-api.iml" filepath="$PROJECT_DIR$/nono-user-api/nono-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nono-user-core/nono-user-core.iml" filepath="$PROJECT_DIR$/nono-user-core/nono-user-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nono-user-parent/nono-user-parent.iml" filepath="$PROJECT_DIR$/nono-user-parent/nono-user-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nono-user-web/nono-user-web.iml" filepath="$PROJECT_DIR$/nono-user-web/nono-user-web.iml" />
+    </modules>
+  </component>
+</project>
+

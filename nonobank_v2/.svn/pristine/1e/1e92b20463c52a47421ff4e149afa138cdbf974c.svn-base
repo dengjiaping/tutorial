@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
+  ~ @(#) app-database.xml 2014-10-21 15:23
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+        <!-- 基本属性 url、user、password -->
+        <property name="url" value="${user.db.jdbcUrl}"/>
+        <property name="username" value="${user.db.username}"/>
+        <property name="password" value="${user.db.password}"/>
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="${user.db.initialSize}"/>
+        <property name="minIdle" value="${user.db.minIdle}"/>
+        <property name="maxActive" value="${user.db.maxActive}"/>
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="${user.db.maxWait}"/>
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000"/>
+
+        <property name="validationQuery" value="SELECT 'x'"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <!--property name="poolPreparedStatements" value="true"/>
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20"/-->
+
+        <!-- 配置监控统计拦截的filters。状态统计：stat，日常记录：slf4j -->
+        <property name="filters" value="stat,slf4j"/>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <bean id="queryDslJdbcTemplate" class="com.nonobank.data.jdbc.query.QueryDslJdbcTemplate">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="jpmRepositoryInterceptor" class="com.nonobank.spring.aop.interceptor.CustomJamonPerformanceMonitorInterceptor">
+        <property name="enabled" value="${jpm.repository.enabled}" />
+        <property name="loggerName" value="${jpm.repository.loggerName}" />
+        <property name="showParameters" value="${jpm.repository.showParameters}" />
+        <property name="logTargetClassInvocation" value="true" />
+    </bean>
+
+    <bean id="jpmServiceInterceptor" class="com.nonobank.spring.aop.interceptor.CustomJamonPerformanceMonitorInterceptor">
+        <property name="enabled" value="${jpm.service.enabled}" />
+        <property name="loggerName" value="${jpm.service.loggerName}" />
+        <property name="showParameters" value="${jpm.service.showParameters}" />
+        <property name="logTargetClassInvocation" value="true" />
+    </bean>
+
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="repositoryPointcut"
+                      expression="@within(org.springframework.stereotype.Repository)" />
+        <aop:pointcut id="servicePointcut"
+                      expression="@within(org.springframework.stereotype.Service)" />
+        <aop:advisor pointcut-ref="repositoryPointcut" advice-ref="jpmRepositoryInterceptor" />
+        <aop:advisor pointcut-ref="servicePointcut" advice-ref="jpmServiceInterceptor" />
+    </aop:config>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!-- proxy-target-class=true 表示只扫描实现类（子类）方法上的 @Transactional 注解 -->
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+</beans>

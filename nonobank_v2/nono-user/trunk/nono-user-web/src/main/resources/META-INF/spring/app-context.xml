@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
+  ~ @(#) app-context.xml 2014-10-21 14:24
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <context:property-placeholder ignore-resource-not-found="true"
+                                  location="classpath*:/META-INF/config/app-*.properties" />
+
+    <import resource="app-config.xml" />
+    <import resource="app-database.xml" />
+
+    <bean class="com.nonobank.user.domain.ctx.DictCmdContext" factory-method="getContext">
+        <property name="bankRepository" ref="bankRepository"/>
+        <property name="collegeRepository" ref="collegeRepository"/>
+        <property name="commonDictRepository" ref="commonDictRepository"/>
+        <property name="locationRepository" ref="locationRepository"/>
+    </bean>
+
+    <context:component-scan base-package="com.nonobank.user" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component" />
+    </context:component-scan>
+
+    <bean id="slf4JBridgeHandler" class="org.slf4j.bridge.SLF4JBridgeHandler"
+          init-method="removeHandlersForRootLogger"/>
+    <bean class="org.slf4j.bridge.SLF4JBridgeHandler" init-method="install"
+          depends-on="slf4JBridgeHandler"/>
+
+    <!-- System.out.println & System.err.println handling through SLF4J -->
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetClass" value="uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J"/>
+        <property name="staticMethod"
+                  value="uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J.sendSystemOutAndErrToSLF4J"/>
+        <property name="arguments">
+            <list>
+                <!-- Set log level for System.out -->
+                <util:constant
+                        static-field="uk.org.lidalia.sysoutslf4j.context.LogLevel.DEBUG"/>
+                <!-- Set log level for System.err -->
+                <util:constant
+                        static-field="uk.org.lidalia.sysoutslf4j.context.LogLevel.ERROR"/>
+            </list>
+        </property>
+    </bean>
+</beans>

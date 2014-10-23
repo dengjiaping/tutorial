@@ -1,0 +1,49 @@
+##废弃的数据表
+admin_cs_daily  
+borrows_makingup  
+borrows_risk  
+code  
+config  
+euto_banks  
+euto_region  
+finance_log_sequence  
+home_view  
+interest interest  
+licai_articals  
+licai_type  
+log  
+log_bkp_20130305  
+bbs的表都可以删除  
+borrows_ahead开头的三张表都可以删除  
+members_analysis  
+members_excel_sync  
+offline_recharges  
+stream  
+
+##基本不使用/不太用
+admin_audit_stat 审核资料表，目前已经没有用  
+admin_channels 渠道用户相关表，用得少  
+admin_credit 拉征信的人员表，目前用户不大  
+app_visit_record app的访问记录，在新框架下用户不大  
+borrows_sign_record 现在不太用  
+company_stockholder 现在不太用  
+debt_transfer, debt_log 现在不用了，只看历史数据  
+event打头的基本不用  
+member_friend打头的暂时不用  
+members_audit_sendmessage 基本不用  
+session 当前在线人数，目前已不使用  
+
+##临时表/测试表
+db_ba_temp 临时表  
+debt_outsite 临时表  
+system_auto_test  
+temp_debt_buy_sum  
+temp_vip_lixi_income  
+test_db  
+user_cookie  
+
+##特别注意
+members 表中的province_id和city_id属于无效字段  
+bankcode 这是镑客码表，而不是银行代码  
+sessions   当用数据库记录session时，数据在此表中  
+score_log 数据丢失！！！  
