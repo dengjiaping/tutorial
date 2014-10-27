@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) QEmailVerifySource.java 2014-10-13 14:49
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) QEmailVerifySource.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.message;
@@ -21,7 +21,7 @@ import static java.sql.Types.*;
 
 /**
  * @author Yichuan
- * @version $Id: QEmailVerifySource.java 140 2014-10-13 07:15:12Z yichuan $
+ * @version $Id: QEmailVerifySource.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class QEmailVerifySource extends QAbstractRecording<EmailVerifySource> {
@@ -36,6 +36,8 @@ public class QEmailVerifySource extends QAbstractRecording<EmailVerifySource> {
     public final NumberPath<Long> id = createNumber(PROP_ID, Long.class);
     // 用户ID
     public final NumberPath<Long> userId = createNumber(PROP_USER_ID, Long.class);
+    // 业务类型
+    public final EnumPath<BusinessType> type = createEnum(PROP_TYPE, BusinessType.class);
     // 加密token
     public final StringPath token = createString(PROP_TOKEN);
     // 实际内容
@@ -80,6 +82,7 @@ public class QEmailVerifySource extends QAbstractRecording<EmailVerifySource> {
     public void addMetadatas() {
         addMetadata(id, named("ID").ofType(BIGINT));
         addMetadata(userId, named("USER_ID").ofType(BIGINT));
+        addMetadata(type, named("TYPE").ofType(TINYINT).withSize(1));
         addMetadata(token, named("TOKEN").ofType(VARCHAR).withSize(50));
         addMetadata(content, named("CONTENT").ofType(VARCHAR).withSize(100));
         addMetadata(deadline, named("DEADLINE").ofType(BIGINT));

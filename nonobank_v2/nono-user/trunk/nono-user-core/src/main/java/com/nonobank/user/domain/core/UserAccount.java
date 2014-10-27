@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserAccount.java 2014-10-09 14:11
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserAccount.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.core;
@@ -23,7 +23,7 @@ import static com.google.common.base.Preconditions.checkArgument;
  * 用户帐号实体。
  *
  * @author fuchun
- * @version $Id: UserAccount.java 199 2014-10-17 03:33:41Z fuchun $
+ * @version $Id: UserAccount.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserAccount extends BaseUser<UserAccount> {

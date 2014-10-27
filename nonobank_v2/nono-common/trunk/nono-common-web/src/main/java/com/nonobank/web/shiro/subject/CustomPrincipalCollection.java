@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) CustomPrincipalCollection.java 2014-09-26 16:03
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CustomPrincipalCollection.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.shiro.subject;
@@ -29,7 +29,7 @@ import java.util.*;
  * 自定义实现的{@code MutablePrincipalCollection}。
  *
  * @author Fuchun
- * @version $Id: CustomPrincipalCollection.java 32 2014-09-26 08:16:39Z fuchun $
+ * @version $Id: CustomPrincipalCollection.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public class CustomPrincipalCollection implements MutablePrincipalCollection {

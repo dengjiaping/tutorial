@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Values.java 2014-10-16 13:17
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Values.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.base;
@@ -22,7 +22,7 @@ import java.util.Objects;
  * 此接口中的字符串值的长度是有限制的：{@code 0 ~ 250}。
  *
  * @author fuchun
- * @version $Id: Values.java 185 2014-10-16 06:15:41Z fuchun $
+ * @version $Id: Values.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public interface Values {

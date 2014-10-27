@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ImageProp.java 2014-10-15 16:51
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ImageProp.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.common;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * @author Yichuan
- * @version $Id: ImageProp.java 216 2014-10-20 03:09:07Z yichuan $
+ * @version $Id: ImageProp.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class ImageProp implements Serializable {

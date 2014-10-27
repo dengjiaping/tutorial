@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) AbstractUserWebAppTest.java 2014-10-22 11:38
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractUserWebAppTest.java 2014-10-27 16:42
  */
 
 package com.nonobank.user;
@@ -18,7 +18,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 /**
  * @author fuchun
- * @version $Id: AbstractUserWebAppTest.java 244 2014-10-22 05:45:01Z fuchun $
+ * @version $Id: AbstractUserWebAppTest.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @RunWith(SpringJUnit4ClassRunner.class)

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Relative.java 2014-10-11 09:09
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Relative.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.related;
@@ -13,7 +13,7 @@ import java.io.Serializable;
  * 亲属信息
  *
  * @author Yichuan
- * @version $Id: Relative.java 114 2014-10-13 01:51:44Z fuchun $
+ * @version $Id: Relative.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class Relative implements Serializable {

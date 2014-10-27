@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EnumAsValueTypeTest.java 2014-09-29 11:01
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EnumValueTypeTest.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.types;
@@ -20,47 +20,47 @@ import static org.junit.Assert.assertThat;
 
 /**
  * @author fuchun
- * @version $Id: EnumValueTypeTest.java 117 2014-10-13 02:50:58Z fuchun $
+ * @version $Id: EnumValueTypeTest.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class EnumValueTypeTest {
 
-    private final EnumValueType<Gender, Number> evt = new EnumValueType<>(
-            Gender.class);
+    private final EnumValueType<Gender, String> evt = new EnumValueType<>(
+            Types.VARCHAR, Gender.class);
 
     @Test
     public void testGetValue() throws Exception {
         ResultSet rs = createMock(ResultSet.class);
-        expect(rs.getObject(0)).andReturn(Gender.FEMALE.getValue());
-        expect(rs.getInt(0)).andReturn(Gender.FEMALE.getValue().intValue());
+        expect(rs.getObject(1)).andReturn(Gender.FEMALE.getValue());
+        expect(rs.getString(1)).andReturn(Gender.FEMALE.getValue());
         replay(rs);
 
-        Gender g = evt.getValue(rs, 0);
+        Gender g = evt.getValue(rs, 1);
         assertNotNull(g);
         assertThat(g, Is.is(Gender.FEMALE));
 
         reset(rs);
-        expect(rs.getObject(0)).andReturn(0);
-        expect(rs.getInt(0)).andReturn(0);
+        expect(rs.getObject(1)).andReturn("C");
+        expect(rs.getString(1)).andReturn("C");
         replay(rs);
 
-        g = evt.getValue(rs, 0);
+        g = evt.getValue(rs, 1);
         assertNull(g);
     }
 
     @Test
     public void testSetValue() throws Exception {
         PreparedStatement ps = createNiceMock(PreparedStatement.class);
-        ps.setInt(0, Gender.UNKNOWN.getValue().intValue());
+        ps.setString(1, Gender.UNKNOWN.getValue());
         replay(ps);
 
-        evt.setValue(ps, 0, Gender.UNKNOWN);
+        evt.setValue(ps, 1, Gender.UNKNOWN);
         verify(ps);
 
         reset(ps);
-        ps.setNull(0, Types.SMALLINT);
+        ps.setNull(1, Types.VARCHAR);
         replay(ps);
 
-        evt.setValue(ps, 0, null);
+        evt.setValue(ps, 1, null);
         verify(ps);
     }
 }

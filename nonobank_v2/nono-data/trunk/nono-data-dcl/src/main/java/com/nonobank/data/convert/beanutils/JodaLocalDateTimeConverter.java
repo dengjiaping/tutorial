@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JodaLocalDateTimeConverter.java 2014-10-08 12:40
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JodaLocalDateTimeConverter.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.convert.beanutils;
@@ -9,7 +9,7 @@ import org.joda.time.LocalDateTime;
 
 /**
  * @author fuchun
- * @version $Id: JodaLocalDateTimeConverter.java 45 2014-10-08 06:46:55Z fuchun $
+ * @version $Id: JodaLocalDateTimeConverter.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class JodaLocalDateTimeConverter extends JodaDateTimeConverter {

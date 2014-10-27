@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) RecordStatus.java 2014-09-28 14:21
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) RecordStatus.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.domain;
@@ -14,7 +14,7 @@ import javax.annotation.Nullable;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: RecordStatus.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: RecordStatus.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public enum RecordStatus implements EnumValue<Number> {
 

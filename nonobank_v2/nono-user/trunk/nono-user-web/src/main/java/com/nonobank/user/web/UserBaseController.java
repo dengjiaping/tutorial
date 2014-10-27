@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserBaseController.java 2014-10-22 13:55
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserBaseController.java 2014-10-27 16:42
  */
 
 package com.nonobank.user.web;
@@ -15,7 +15,7 @@ import javax.annotation.Nonnull;
  * User system base controller.
  *
  * @author fuchun
- * @version $Id: UserBaseController.java 245 2014-10-22 06:28:18Z fuchun $
+ * @version $Id: UserBaseController.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserBaseController extends BaseControllerSupport {

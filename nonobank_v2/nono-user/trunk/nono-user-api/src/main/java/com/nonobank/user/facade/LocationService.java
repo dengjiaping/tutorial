@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) LocationService.java 2014-10-21 13:48
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) LocationService.java 2014-10-27 16:40
  */
 
 package com.nonobank.user.facade;
@@ -18,7 +18,7 @@ import java.util.List;
  * 所在地（城市）信息服务接口。
  *
  * @author fuchun
- * @version $Id: LocationService.java 260 2014-10-23 07:18:22Z yichuan $
+ * @version $Id: LocationService.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface LocationService extends Remote {

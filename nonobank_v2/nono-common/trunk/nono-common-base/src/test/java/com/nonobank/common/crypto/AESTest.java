@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) AESTest.java 2014-09-24 16:01
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AESTest.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.crypto;
@@ -14,7 +14,7 @@ import java.security.Key;
  * {@link AES} test case.
  *
  * @author Fuchun
- * @version $Id: AESTest.java 24 2014-09-24 08:02:42Z fuchun $
+ * @version $Id: AESTest.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public class AESTest extends CryptoTest {
 

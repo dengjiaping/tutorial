@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserOptionRepository.java 2014-10-16 14:25
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserOptionRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.repository.core;
@@ -21,7 +21,7 @@ import static com.nonobank.user.domain.core.QUserOption.qOpt;
  * 用户配置项{@code UserOption} 实体的仓储接口。
  *
  * @author fuchun
- * @version $Id: UserOptionRepository.java 196 2014-10-16 08:54:06Z fuchun $
+ * @version $Id: UserOptionRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface UserOptionRepository extends QueryDslRepository<UserOption, Long> {

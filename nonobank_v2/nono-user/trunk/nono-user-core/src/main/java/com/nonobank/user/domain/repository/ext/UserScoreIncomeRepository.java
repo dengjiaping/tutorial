@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserScoreDetailRepository.java 2014-10-17 11:11
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserScoreIncomeRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.repository.ext;
@@ -18,7 +18,7 @@ import static com.nonobank.user.domain.ext.UserScoreIncome.PROP_USER_ID;
  * 用户积分收入数据查询接口
  *
  * @author Yichuan
- * @version $Id: UserScoreIncomeRepository.java 200 2014-10-17 03:57:56Z yichuan $
+ * @version $Id: UserScoreIncomeRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface UserScoreIncomeRepository extends QueryDslRepository<UserScoreIncome, Long> {

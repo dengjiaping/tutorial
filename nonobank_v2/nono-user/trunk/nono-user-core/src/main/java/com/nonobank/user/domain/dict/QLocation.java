@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) QLocation.java 2014-10-14 15:28
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) QLocation.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -23,7 +23,7 @@ import static java.sql.Types.VARCHAR;
 
 /**
  * QLocation is a Querydsl query type for Location
- * @version $Id: QLocation.java 168 2014-10-15 04:41:27Z fuchun $
+ * @version $Id: QLocation.java 289 2014-10-27 08:46:50Z fuchun $
  */
 @Generated("com.mysema.query.codegen.SupertypeSerializer")
 public class QLocation extends RelationalPathBase<Location> {

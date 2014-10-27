@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ImmutableTriple.java 2014-09-24 16:02
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ImmutableTriple.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.tuple;
@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @param <L> the left element type
  * @param <M> the middle element type
  * @param <R> the right element type
- * @version $Id: ImmutableTriple.java 26 2014-09-24 08:09:03Z fuchun $
+ * @version $Id: ImmutableTriple.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public final class ImmutableTriple<L, M, R> extends Triple<L, M, R> {
     /**

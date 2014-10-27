@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserLoginHistory.java 2014-10-09 15:22
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserLoginHistory.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.authc;
@@ -21,7 +21,7 @@ import java.util.Objects;
  * </pre>
  *
  * @author fuchun
- * @version $Id: UserLoginHistory.java 131 2014-10-13 06:05:02Z fuchun $
+ * @version $Id: UserLoginHistory.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserLoginHistory extends AbstractRecording<Long, UserLoginHistory> {

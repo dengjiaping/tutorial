@@ -1,17 +1,17 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserEducation.java 2014-10-10 16:12
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserEducation.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext;
 
 import com.google.common.base.MoreObjects;
 import com.nonobank.data.domain.AbstractRecording;
-import com.nonobank.user.domain.dict.Education;
+import com.nonobank.user.domain.dict.Dict;
 
 /**
  * @author Yichuan
- * @version $Id: UserEducation.java 134 2014-10-13 06:31:03Z yichuan $
+ * @version $Id: UserEducation.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserEducation extends AbstractRecording<Long, UserEducation> {
@@ -36,7 +36,7 @@ public class UserEducation extends AbstractRecording<Long, UserEducation> {
     // 专业
     private String profession;
     // 学历
-    private Education education;
+    private Dict education;
     // 开始-年
     private Integer startYear;
     // 开始-月
@@ -84,11 +84,11 @@ public class UserEducation extends AbstractRecording<Long, UserEducation> {
         this.profession = profession;
     }
 
-    public Education getEducation() {
+    public Dict getEducation() {
         return education;
     }
 
-    public void setEducation(Education education) {
+    public void setEducation(Dict education) {
         this.education = education;
     }
 

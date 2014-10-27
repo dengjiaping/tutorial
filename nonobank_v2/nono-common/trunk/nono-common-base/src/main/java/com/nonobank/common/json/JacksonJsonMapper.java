@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JacksonJsonMapper.java 2014-09-24 15:59
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JacksonJsonMapper.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.json;
@@ -32,7 +32,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: JacksonJsonMapper.java 26 2014-09-24 08:09:03Z fuchun $
+ * @version $Id: JacksonJsonMapper.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public class JacksonJsonMapper implements JsonMapper {
 

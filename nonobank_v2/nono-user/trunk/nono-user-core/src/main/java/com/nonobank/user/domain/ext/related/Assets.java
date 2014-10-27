@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Assets.java 2014-10-11 13:49
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Assets.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.related;
@@ -14,7 +14,7 @@ import java.util.List;
  * 资产类型枚举
  *
  * @author Yichuan
- * @version $Id: Assets.java 144 2014-10-13 08:09:26Z yichuan $
+ * @version $Id: Assets.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public enum Assets implements EnumValue<Short> {

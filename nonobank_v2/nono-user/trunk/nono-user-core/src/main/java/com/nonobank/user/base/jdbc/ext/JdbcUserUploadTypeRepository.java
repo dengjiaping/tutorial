@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcUserUploadTypeRepository.java 2014-10-20 14:22
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcUserUploadTypeRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.ext;
@@ -18,7 +18,7 @@ import static com.nonobank.user.domain.ext.QUserUploadType.quut;
  * 用户上传类型数据查询接口
  *
  * @author Yichuan
- * @version $Id: JdbcUserUploadTypeRepository.java 219 2014-10-20 06:48:31Z yichuan $
+ * @version $Id: JdbcUserUploadTypeRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("userUploadTypeRepository")

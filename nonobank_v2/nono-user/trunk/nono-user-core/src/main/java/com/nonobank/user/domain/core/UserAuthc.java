@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserAuthc.java 2014-10-09 15:01
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserAuthc.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.core;
@@ -13,7 +13,7 @@ import org.joda.time.DateTime;
  * 用户认证信息实体。
  *
  * @author fuchun
- * @version $Id: UserAuthc.java 152 2014-10-14 01:05:52Z yichuan $
+ * @version $Id: UserAuthc.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserAuthc extends BaseUser<UserAuthc> {

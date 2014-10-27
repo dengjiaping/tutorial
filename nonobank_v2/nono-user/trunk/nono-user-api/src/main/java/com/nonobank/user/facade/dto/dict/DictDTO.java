@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) DictDTO.java 2014-10-22 10:59
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) DictDTO.java 2014-10-27 16:40
  */
 
 package com.nonobank.user.facade.dto.dict;
@@ -11,7 +11,7 @@ import java.io.Serializable;
  * The {@code Dict} data transform object.
  *
  * @author fuchun
- * @version $Id: DictDTO.java 240 2014-10-22 03:27:19Z fuchun $
+ * @version $Id: DictDTO.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class DictDTO implements Serializable {

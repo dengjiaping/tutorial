@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcCollegeRepository.java 2014-10-22 11:24
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcCollegeRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.dict;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 /**
  * The JDBC based on implementation of the {@code CollegeRepository}.
  * @author fuchun
- * @version $Id: JdbcCollegeRepository.java 240 2014-10-22 03:27:19Z fuchun $
+ * @version $Id: JdbcCollegeRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("collegeRepository")

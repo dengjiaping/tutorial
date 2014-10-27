@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) GenericRepository.java 2014-09-28 14:42
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) GenericRepository.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.repository;
@@ -17,7 +17,7 @@ import java.util.List;
  * {@code Repository} 通用接口。
  *
  * @author fuchun
- * @version $Id: GenericRepository.java 42 2014-09-29 08:27:16Z fuchun $
+ * @version $Id: GenericRepository.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 @NoRepositoryBean

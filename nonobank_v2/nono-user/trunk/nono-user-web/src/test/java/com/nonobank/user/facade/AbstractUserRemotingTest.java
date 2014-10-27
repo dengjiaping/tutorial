@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) AbstractUserRemotingTest.java 2014-10-22 12:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractUserRemotingTest.java 2014-10-27 16:42
  */
 
 package com.nonobank.user.facade;
@@ -13,7 +13,7 @@ import org.junit.Ignore;
  * 此测试需要启动 nono-user-web 应用后才能进行，故单独进行测试。
  *
  * @author fuchun
- * @version $Id: AbstractUserRemotingTest.java 244 2014-10-22 05:45:01Z fuchun $
+ * @version $Id: AbstractUserRemotingTest.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Ignore

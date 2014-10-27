@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ScoreCapitalPrefer.java 2014-10-15 11:22
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ScoreCapitalInfo.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.capital;
@@ -12,7 +12,7 @@ import java.math.BigDecimal;
  * 积分等级对应相关资本信息实体
  *
  * @author Yichuan
- * @version $Id: ScoreCapitalInfo.java 176 2014-10-15 09:11:14Z yichuan $
+ * @version $Id: ScoreCapitalInfo.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class ScoreCapitalInfo implements Serializable {

@@ -1,17 +1,18 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserDigital.java 2014-10-09 15:19
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserStats.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.core;
 
 import com.google.common.base.MoreObjects;
+import org.joda.time.DateTime;
 
 /**
  * 用户关键数据信息实体。
  *
  * @author fuchun
- * @version $Id: UserStats.java 197 2014-10-17 01:50:40Z yichuan $
+ * @version $Id: UserStats.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserStats extends BaseUser<UserStats> {
@@ -36,6 +37,19 @@ public class UserStats extends BaseUser<UserStats> {
     private Integer biddingCount;
 
     public UserStats() {
+    }
+
+    public UserStats(Long userId, Integer totalScore, Integer currScore,
+                     Integer borrowCount, Integer rejectedCount, Integer biddingCount,
+                     DateTime lastModifiedDate, DateTime createdDate) {
+        setUserId(userId);
+        this.totalScore = totalScore;
+        this.currScore = currScore;
+        this.borrowCount = borrowCount;
+        this.rejectedCount = rejectedCount;
+        this.biddingCount = biddingCount;
+        setLastModifiedDate(lastModifiedDate);
+        setCreatedDate(createdDate);
     }
 
     public Integer getTotalScore() {

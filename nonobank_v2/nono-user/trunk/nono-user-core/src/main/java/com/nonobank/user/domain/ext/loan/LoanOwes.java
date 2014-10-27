@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) LoanOwes.java 2014-10-22 15:53
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) LoanOwes.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.loan;
@@ -12,7 +12,7 @@ import java.math.BigDecimal;
  * 各贷款债务信息
  *
  * @author Yichuan
- * @version $Id: LoanOwes.java 248 2014-10-22 08:12:56Z yichuan $
+ * @version $Id: LoanOwes.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class LoanOwes implements Serializable {

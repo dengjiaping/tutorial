@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) RedisRepository.java 2014-10-17 14:15
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) RedisRepository.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.repository.support;
@@ -34,7 +34,7 @@ import java.util.Map;
  * The redis based on implementation of the {@code GenericRepository}.
  *
  * @author fuchun
- * @version $Id: RedisRepository.java 221 2014-10-20 09:20:34Z fuchun $
+ * @version $Id: RedisRepository.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 @NoRepositoryBean

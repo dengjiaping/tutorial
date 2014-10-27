@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Bank.java 2014-10-16 10:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Bank.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -17,7 +17,7 @@ import java.util.List;
  * 银行数据字典实体类。
  *
  * @author fuchun
- * @version $Id: Bank.java 189 2014-10-16 07:20:25Z fuchun $
+ * @version $Id: Bank.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class Bank extends AbstractEntity<Integer, Bank> {

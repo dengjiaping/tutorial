@@ -1,12 +1,16 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) LocationServiceImpl.java 2014-10-21 13:50
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) LocationServiceImpl.java 2014-10-27 16:42
  */
 
 package com.nonobank.user.facade.impl;
 
 import com.nonobank.user.domain.dict.*;
-import com.nonobank.user.facade.LocationService;
+import com.nonobank.user.facade.*;
+import com.nonobank.user.facade.assembler.dict.CityDTOAssembler;
+import com.nonobank.user.facade.assembler.dict.CountyDTOAssembler;
+import com.nonobank.user.facade.assembler.dict.RegionDTOAssembler;
+import com.nonobank.user.facade.assembler.dict.StateDTOAssembler;
 import com.nonobank.user.facade.dto.dict.CityDTO;
 import com.nonobank.user.facade.dto.dict.CountyDTO;
 import com.nonobank.user.facade.dto.dict.RegionDTO;
@@ -18,7 +22,7 @@ import java.util.List;
 
 /**
  * @author fuchun
- * @version $Id: LocationServiceImpl.java 260 2014-10-23 07:18:22Z yichuan $
+ * @version $Id: LocationServiceImpl.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Service("locationService")

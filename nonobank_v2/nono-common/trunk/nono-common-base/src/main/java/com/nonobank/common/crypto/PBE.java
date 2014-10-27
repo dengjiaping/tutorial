@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) PBE.java 2014-09-24 15:40
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) PBE.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.crypto;
@@ -24,7 +24,7 @@ import java.security.spec.InvalidKeySpecException;
  * The PBE implementation of the crypto.
  *
  * @author Fuchun
- * @version $Id: PBE.java 22 2014-09-24 07:45:00Z fuchun $
+ * @version $Id: PBE.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public final class PBE extends AbstractCrypto {
 

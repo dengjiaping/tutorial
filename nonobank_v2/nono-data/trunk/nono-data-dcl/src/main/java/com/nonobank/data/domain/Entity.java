@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Entity.java 2014-10-27 16:48
+ */
+
 package com.nonobank.data.domain;
 
 import com.google.common.collect.ImmutableMap;
@@ -18,7 +23,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: Entity.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: Entity.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public interface Entity<ID extends Serializable & Comparable<ID>, E extends Entity<ID, E>>
         extends Persistable<ID> {

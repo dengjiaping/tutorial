@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) AbstractCrypto.java 2014-09-24 15:59
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractCrypto.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.crypto;
@@ -33,7 +33,7 @@ import static com.google.common.base.Strings.nullToEmpty;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: AbstractCrypto.java 26 2014-09-24 08:09:03Z fuchun $
+ * @version $Id: AbstractCrypto.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public abstract class AbstractCrypto {
 

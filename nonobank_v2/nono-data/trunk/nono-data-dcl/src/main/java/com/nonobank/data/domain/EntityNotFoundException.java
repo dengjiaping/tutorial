@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EntityNotFoundException.java 2014-09-28 14:20
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EntityNotFoundException.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.domain;
@@ -10,7 +10,7 @@ package com.nonobank.data.domain;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: EntityNotFoundException.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: EntityNotFoundException.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class EntityNotFoundException extends EntityException {
 

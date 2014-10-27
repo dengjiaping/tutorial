@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserDict.java 2014-10-10 17:13
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserDict.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -12,7 +12,7 @@ import static com.nonobank.user.domain.ctx.DictCmdContext.commonDictRepository;
 
 /**
  * @author fuchun
- * @version $Id: UserDict.java 228 2014-10-21 07:38:59Z yichuan $
+ * @version $Id: UserDict.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public abstract class UserDict {

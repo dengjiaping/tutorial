@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcUserAuthcRepository.java 2014-10-13 11:35
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcUserAuthcRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.core;
@@ -24,7 +24,7 @@ import static com.nonobank.user.domain.core.QUserAuthc.quac;
  * The JDBC base on implementation of the {@code UserAuthcRepository}.
  *
  * @author Yichuan
- * @version $Id: JdbcUserAuthcRepository.java 128 2014-10-13 03:53:10Z yichuan $
+ * @version $Id: JdbcUserAuthcRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("userAuthcRepository")

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) CountyDTO.java 2014-10-21 12:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CountyDTO.java 2014-10-27 16:40
  */
 
 package com.nonobank.user.facade.dto.dict;
@@ -9,7 +9,7 @@ package com.nonobank.user.facade.dto.dict;
  * The DTO of the {@code County} "entity".
  *
  * @author fuchun
- * @version $Id: CountyDTO.java 233 2014-10-21 09:13:58Z fuchun $
+ * @version $Id: CountyDTO.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class CountyDTO extends AbstractArea {

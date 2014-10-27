@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) CustomByteSource.java 2014-09-26 16:07
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CustomByteSource.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.shiro.authc;
@@ -14,7 +14,7 @@ import org.apache.shiro.util.SimpleByteSource;
  * The custom implementation for {@code ByteSource}.
  *
  * @author Fuchun
- * @version $Id: CustomByteSource.java 32 2014-09-26 08:16:39Z fuchun $
+ * @version $Id: CustomByteSource.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public class CustomByteSource extends SimpleByteSource {

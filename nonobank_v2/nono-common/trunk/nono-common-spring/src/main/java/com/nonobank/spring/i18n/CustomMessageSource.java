@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) CustomMessageSource.java 2014-09-24 16:46
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CustomMessageSource.java 2014-10-27 16:47
  */
 
 package com.nonobank.spring.i18n;
@@ -13,7 +13,7 @@ import java.util.Locale;
  * The custom {@code MessageSource} extends interface.
  *
  * @author fuchun
- * @version $Id: CustomMessageSource.java 27 2014-09-24 09:40:40Z fuchun $
+ * @version $Id: CustomMessageSource.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public interface CustomMessageSource extends MessageSource {

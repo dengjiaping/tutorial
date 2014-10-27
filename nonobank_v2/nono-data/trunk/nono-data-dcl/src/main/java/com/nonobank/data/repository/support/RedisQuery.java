@@ -1,13 +1,13 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) RedisQuery.java 2014-10-20 11:03
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) RedisQuery.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.repository.support;
 
 import com.google.common.collect.Sets;
 import com.nonobank.data.domain.Entity;
-import com.nonobank.data.redis.query.PropertyIndex;
+import com.nonobank.data.repository.query.PropertyIndex;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 
@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author fuchun
- * @version $Id: RedisQuery.java 221 2014-10-20 09:20:34Z fuchun $
+ * @version $Id: RedisQuery.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class RedisQuery<E extends Entity<ID, E>, ID extends Serializable & Comparable<ID>> {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Location.java 2014-10-14 15:26
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Location.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  * 省、城市、县区数据字典实体。
  *
  * @author fuchun
- * @version $Id: Location.java 237 2014-10-22 02:24:20Z fuchun $
+ * @version $Id: Location.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class Location extends AbstractEntity<Integer, Location> {

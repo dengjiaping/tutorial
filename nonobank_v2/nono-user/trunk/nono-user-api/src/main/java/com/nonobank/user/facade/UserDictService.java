@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserDictService.java 2014-10-22 08:59
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserDictService.java 2014-10-27 16:40
  */
 
 package com.nonobank.user.facade;
@@ -18,7 +18,7 @@ import java.util.List;
  * 用户字典数据远程服务接口。
  *
  * @author fuchun
- * @version $Id: UserDictService.java 260 2014-10-23 07:18:22Z yichuan $
+ * @version $Id: UserDictService.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface UserDictService extends Remote {

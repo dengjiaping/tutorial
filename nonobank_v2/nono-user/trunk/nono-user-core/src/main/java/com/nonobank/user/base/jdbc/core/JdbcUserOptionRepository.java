@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcUserOptionRepository.java 2014-10-16 14:46
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcUserOptionRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.core;
@@ -18,7 +18,7 @@ import java.util.List;
  * The JDBC based on implementation of the {@code UserOptionRepository}.
  *
  * @author fuchun
- * @version $Id: JdbcUserOptionRepository.java 189 2014-10-16 07:20:25Z fuchun $
+ * @version $Id: JdbcUserOptionRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("userOptionRepository")

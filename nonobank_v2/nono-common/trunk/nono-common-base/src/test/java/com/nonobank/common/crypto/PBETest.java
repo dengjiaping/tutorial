@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) PBETest.java 2014-09-24 16:01
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) PBETest.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.crypto;
@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
  * {@link PBE} test case.
  *
  * @author Fuchun
- * @version $Id: PBETest.java 26 2014-09-24 08:09:03Z fuchun $
+ * @version $Id: PBETest.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public class PBETest extends CryptoTest {
 

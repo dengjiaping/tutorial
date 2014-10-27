@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) LocationController.java 2014-10-22 14:44
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) LocationController.java 2014-10-27 16:42
  */
 
 package com.nonobank.user.web;
@@ -22,7 +22,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
  * 所在地（位置）字典数据控制器。
  *
  * @author fuchun
- * @version $Id: LocationController.java 254 2014-10-23 03:00:31Z fuchun $
+ * @version $Id: LocationController.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @RestController

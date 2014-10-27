@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ScoreAlloc.java 2014-10-16 09:34
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ScoreAlloc.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext;
@@ -13,7 +13,7 @@ import com.nonobank.user.domain.ext.common.ScoreAllocType;
  * 用户属性积分关联信息实体
  *
  * @author Yichuan
- * @version $Id: ScoreAlloc.java 212 2014-10-20 01:48:43Z yichuan $
+ * @version $Id: ScoreAlloc.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class ScoreAlloc extends AbstractRecording<Long, ScoreAlloc> {

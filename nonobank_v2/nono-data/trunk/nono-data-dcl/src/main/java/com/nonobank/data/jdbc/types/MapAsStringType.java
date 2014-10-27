@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) MapAsStringType.java 2014-09-28 15:35
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) MapAsStringType.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.types;
@@ -26,7 +26,7 @@ import static com.google.common.base.CharMatcher.WHITESPACE;
  * }</pre>
  *
  * @author fuchun
- * @version $Id: MapAsStringType.java 42 2014-09-29 08:27:16Z fuchun $
+ * @version $Id: MapAsStringType.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class MapAsStringType extends AbstractType<Map<String, String>> {

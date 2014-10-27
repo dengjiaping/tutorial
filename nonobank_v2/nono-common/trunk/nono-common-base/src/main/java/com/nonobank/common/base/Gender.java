@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Gender.java 2014-09-24 15:40
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Gender.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.base;
@@ -11,7 +11,7 @@ import com.google.common.base.MoreObjects;
  * 性别枚举。
  *
  * @author Fuchun
- * @version $Id: Gender.java 250 2014-10-22 09:30:42Z yichuan $
+ * @version $Id: Gender.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public enum Gender implements EnumValue<String> {

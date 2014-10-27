@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) QueryDslJdbcRepository.java 2014-09-28 16:29
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) QueryDslJdbcRepository.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.repository.support;
@@ -48,7 +48,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * QueryDSL jdbc repository implementation.
  *
  * @author fuchun
- * @version $Id: QueryDslJdbcRepository.java 113 2014-10-13 01:42:41Z fuchun $
+ * @version $Id: QueryDslJdbcRepository.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class QueryDslJdbcRepository<E extends Entity<ID, E>, ID extends Serializable & Comparable<ID>>

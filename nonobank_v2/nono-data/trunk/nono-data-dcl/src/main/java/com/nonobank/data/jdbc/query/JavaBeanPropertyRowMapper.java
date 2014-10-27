@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JavaBeanPropertyRowMapper.java 2014-09-28 16:57
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JavaBeanPropertyRowMapper.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.query;
@@ -46,7 +46,7 @@ import java.util.Set;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: JavaBeanPropertyRowMapper.java 42 2014-09-29 08:27:16Z fuchun $
+ * @version $Id: JavaBeanPropertyRowMapper.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class JavaBeanPropertyRowMapper<T> implements RowMapper<T> {
 

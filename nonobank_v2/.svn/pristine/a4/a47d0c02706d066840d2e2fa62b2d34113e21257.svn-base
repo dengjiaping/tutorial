@@ -1,0 +1,43 @@
+/*
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CityDTOAssembler.java 2014-10-27 16:42
+ */
+
+package com.nonobank.user.facade.assembler.dict;
+
+import com.nonobank.user.domain.dict.City;
+import com.nonobank.user.facade.assembler.AbstractAssembler;
+import com.nonobank.user.facade.dto.dict.CityDTO;
+
+/**
+ * @author fuchun
+ * @version $Id$
+ * @since 2.0
+ */
+public class CityDTOAssembler extends AbstractAssembler<City, CityDTO> {
+
+    public static final CityDTOAssembler ASSEMBLER = new CityDTOAssembler();
+
+    @Override
+    public CityDTO toDTO(City entity) {
+        if (entity == null) {
+            return null;
+        }
+        CityDTO dto = new CityDTO(
+                entity.getId(),
+                entity.getCode(),
+                entity.getShortName(),
+                entity.getStateId()
+        );
+        if (entity.getCounties() != null) {
+            dto.setCounties(CountyDTOAssembler.ASSEMBLER
+                    .toDTOList(entity.getCounties(), c -> c != null));
+        }
+        return dto;
+    }
+
+    @Override
+    public City toEntity(CityDTO dto) {
+        throw new UnsupportedOperationException("Not support transform to City.");
+    }
+}

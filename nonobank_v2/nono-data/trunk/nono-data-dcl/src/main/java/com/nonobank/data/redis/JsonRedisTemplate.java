@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JsonRedisTemplate.java 2014-09-30 11:33
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JsonRedisTemplate.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.redis;
@@ -32,7 +32,7 @@ import static java.util.Objects.requireNonNull;
  * Redis template of the JSON data type.
  *
  * @author fuchun
- * @version $Id: JsonRedisTemplate.java 44 2014-09-30 04:49:47Z fuchun $
+ * @version $Id: JsonRedisTemplate.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class JsonRedisTemplate<T extends Serializable> extends RedisTemplate<String, T> {

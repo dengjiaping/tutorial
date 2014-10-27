@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EnumConverter.java 2014-10-08 13:39
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EnumConverter.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.convert.beanutils;
@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author fuchun
- * @version $Id: EnumConverter.java 45 2014-10-08 06:46:55Z fuchun $
+ * @version $Id: EnumConverter.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class EnumConverter<E extends Enum<E>> implements Converter {

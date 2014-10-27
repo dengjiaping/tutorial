@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) WebAppConfigure.java 2014-09-26 12:32
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) WebAppConfigure.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.config;
@@ -12,7 +12,7 @@ import org.springframework.ui.context.Theme;
  * Web app 配置接口。
  *
  * @author fuchun
- * @version $Id: WebAppConfigure.java 29 2014-09-26 07:10:32Z fuchun $
+ * @version $Id: WebAppConfigure.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public interface WebAppConfigure {

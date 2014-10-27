@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Pair.java 2014-09-24 16:02
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Pair.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.tuple;
@@ -30,7 +30,7 @@ import java.util.Map;
  * @param <L> the left element type
  * @param <R> the right element type
  * @author bayard
- * @version $Id: Pair.java 26 2014-09-24 08:09:03Z fuchun $
+ * @version $Id: Pair.java 290 2014-10-27 08:48:18Z fuchun $
  * @since Lang 3.0
  */
 public abstract class Pair<L, R> implements Map.Entry<L, R>, Comparable<Pair<L, R>>, Serializable {

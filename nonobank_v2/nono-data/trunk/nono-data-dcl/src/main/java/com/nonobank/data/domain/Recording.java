@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Recording.java 2014-10-27 16:48
+ */
+
 package com.nonobank.data.domain;
 
 import org.joda.time.DateTime;
@@ -7,7 +12,7 @@ import org.joda.time.DateTime;
  * and modification date.
  *
  * @author fuchun
- * @version $Id: Recording.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: Recording.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public interface Recording {

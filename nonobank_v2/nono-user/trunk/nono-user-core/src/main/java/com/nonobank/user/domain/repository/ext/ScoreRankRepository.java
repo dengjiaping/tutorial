@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ScoreRankRepository.java 2014-10-15 13:30
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ScoreRankRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.repository.ext;
@@ -15,7 +15,7 @@ import java.util.Objects;
  * 积分等级信息查询接口
  *
  * @author Yichuan
- * @version $Id: ScoreRankRepository.java 169 2014-10-15 05:45:31Z yichuan $
+ * @version $Id: ScoreRankRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface ScoreRankRepository extends QueryDslRepository<ScoreRank, Long> {

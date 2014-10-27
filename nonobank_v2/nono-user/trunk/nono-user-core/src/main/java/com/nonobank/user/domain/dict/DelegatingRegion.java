@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) DelegatingRegion.java 2014-10-16 09:07
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) DelegatingRegion.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -11,7 +11,7 @@ import java.util.List;
  * The {@code Region} default implementation.
  *
  * @author fuchun
- * @version $Id: DelegatingRegion.java 237 2014-10-22 02:24:20Z fuchun $
+ * @version $Id: DelegatingRegion.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class DelegatingRegion extends DelegatingArea implements Region {

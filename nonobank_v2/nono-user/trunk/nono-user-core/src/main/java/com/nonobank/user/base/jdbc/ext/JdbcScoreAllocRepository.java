@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcScoreAllocRepository.java 2014-10-16 10:30
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcScoreAllocRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.ext;
@@ -22,7 +22,7 @@ import static com.nonobank.user.domain.ext.QScoreAlloc.qsa;
  * 积分类型配置信息数据查询接口
  *
  * @author Yichuan
- * @version $Id: JdbcScoreAllocRepository.java 212 2014-10-20 01:48:43Z yichuan $
+ * @version $Id: JdbcScoreAllocRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("scoreAllocRepository")

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) QueryDslJdbcTemplate.java 2014-09-28 16:14
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) QueryDslJdbcTemplate.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.query;
@@ -42,7 +42,7 @@ import java.util.Objects;
  * {@link org.springframework.jdbc.core.JdbcTemplate} methods.
  *
  * @author fuchun
- * @version $Id: QueryDslJdbcTemplate.java 42 2014-09-29 08:27:16Z fuchun $
+ * @version $Id: QueryDslJdbcTemplate.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class QueryDslJdbcTemplate implements QueryDslJdbcOperations {

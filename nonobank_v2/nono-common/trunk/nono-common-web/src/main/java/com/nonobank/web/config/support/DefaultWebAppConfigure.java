@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) DefaultWebAppConfigure.java 2014-09-26 13:30
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) DefaultWebAppConfigure.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.config.support;
@@ -22,7 +22,7 @@ import static com.nonobank.web.config.WebAppConstants.*;
  * The default implementation of the {@code WebAppConfigure}.
  *
  * @author fuchun
- * @version $Id: DefaultWebAppConfigure.java 29 2014-09-26 07:10:32Z fuchun $
+ * @version $Id: DefaultWebAppConfigure.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public class DefaultWebAppConfigure implements

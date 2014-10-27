@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) DelegatingArea.java 2014-10-15 10:32
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) DelegatingArea.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -13,7 +13,7 @@ import java.io.Serializable;
  * {@code Area} 的委托实现。
  *
  * @author fuchun
- * @version $Id: DelegatingArea.java 249 2014-10-22 08:16:42Z fuchun $
+ * @version $Id: DelegatingArea.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public abstract class DelegatingArea implements Area, Serializable {

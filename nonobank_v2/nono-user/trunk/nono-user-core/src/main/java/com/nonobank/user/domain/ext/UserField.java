@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserField.java 2014-10-16 14:10
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserField.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext;
@@ -13,7 +13,7 @@ import com.nonobank.user.domain.ext.common.VerifyMode;
  * 用户属性设置信息实体
  *
  * @author Yichuan
- * @version $Id: UserField.java 210 2014-10-20 01:12:49Z yichuan $
+ * @version $Id: UserField.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserField extends AbstractRecording<Long, UserField> {

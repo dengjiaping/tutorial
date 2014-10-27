@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Validator.java 2014-10-17 14:01
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Validator.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.util;
@@ -14,7 +14,7 @@ import static com.google.common.base.Strings.isNullOrEmpty;
  * 常用验证(持续添加)
  *
  * @author Yichuan
- * @version $Id: Validator.java 215 2014-10-20 02:24:17Z yichuan $
+ * @version $Id: Validator.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public class Validator {

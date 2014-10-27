@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EmailVerifySourceDTO.java 2014-10-23 17:04
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EmailVerifySourceDTO.java 2014-10-27 16:40
  */
 
 package com.nonobank.user.facade.dto.message;
@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 /**
  * @author Yichuan
- * @version $Id: EmailVerifySourceDTO.java 266 2014-10-23 09:18:20Z yichuan $
+ * @version $Id: EmailVerifySourceDTO.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class EmailVerifySourceDTO implements Serializable {

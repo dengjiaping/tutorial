@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EnumAsValueType.java 2014-09-28 15:29
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EnumValueType.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.types;
@@ -20,7 +20,7 @@ import java.util.Objects;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: EnumValueType.java 118 2014-10-13 02:53:35Z fuchun $
+ * @version $Id: EnumValueType.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class EnumValueType<E extends EnumValue<V>, V> extends AbstractType<E> {
 
@@ -107,8 +107,11 @@ public class EnumValueType<E extends EnumValue<V>, V> extends AbstractType<E> {
                 st.setInt(i, ((Integer) value.getValue()));
             } else if (Number.class.equals(vClass)) {
                 st.setObject(i, ((Number) value.getValue()).intValue());
+            } else if (String.class.equals(vClass)) {
+                st.setString(i, (String) value.getValue());
+            } else {
+                st.setObject(i, value.getValue());
             }
-            st.setObject(i, value.getValue());
         }
     }
 }

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserDictController.java 2014-10-22 16:20
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserDictController.java 2014-10-27 16:42
  */
 
 package com.nonobank.user.web;
@@ -23,7 +23,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
  * 用户属性字典数据控制器。
  *
  * @author fuchun
- * @version $Id: UserDictController.java 254 2014-10-23 03:00:31Z fuchun $
+ * @version $Id: UserDictController.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @RestController
@@ -33,14 +33,14 @@ public class UserDictController extends UserBaseController {
     @RequestMapping(value = "/marriages", method = GET)
     @JsonView(Views.Public.class)
     public List<Dict> listMarriages(
-            @SortDefault(sort = CommonDict.PROP_CODE)Sort sort) {
+            @SortDefault(sort = CommonDict.PROP_CODE) Sort sort) {
         return UserDict.findMarriages(sort);
     }
 
     @RequestMapping(value = "/educations", method = GET)
     @JsonView(Views.Public.class)
     public List<Dict> listEducations(
-            @SortDefault(sort = CommonDict.PROP_CODE)Sort sort) {
+            @SortDefault(sort = CommonDict.PROP_CODE) Sort sort) {
         return UserDict.findEducations(sort);
     }
 

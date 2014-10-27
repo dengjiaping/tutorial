@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) SimpleFormHttpMessageConverter.java 2014-09-26 15:49
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) SimpleFormHttpMessageConverter.java 2014-10-27 16:47
  */
 
 package com.nonobank.http.converter;
@@ -18,7 +18,7 @@ import org.springframework.util.ClassUtils;
  * {@link com.nonobank.http.converter.json.SimpleJackson2HttpMessageConverter} 代替 {@code MappingJackson2HttpMessageConverter}。
  *
  * @author fuchun
- * @version $Id: SimpleFormHttpMessageConverter.java 31 2014-09-26 07:55:11Z fuchun $
+ * @version $Id: SimpleFormHttpMessageConverter.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public class SimpleFormHttpMessageConverter extends FormHttpMessageConverter {

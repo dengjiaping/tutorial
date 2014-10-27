@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserLoanData.java 2014-10-11 09:04
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserLoanInfo.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext;
@@ -14,7 +14,7 @@ import java.math.BigDecimal;
  * 用户借款所需相关信息实体
  *
  * @author Yichuan
- * @version $Id: UserLoanInfo.java 248 2014-10-22 08:12:56Z yichuan $
+ * @version $Id: UserLoanInfo.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserLoanInfo extends BaseUser<UserLoanInfo> {

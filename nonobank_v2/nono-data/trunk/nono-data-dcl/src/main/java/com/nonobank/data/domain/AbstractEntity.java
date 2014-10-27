@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractEntity.java 2014-10-27 16:48
+ */
+
 package com.nonobank.data.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -9,7 +14,7 @@ import java.io.Serializable;
  * {@link #equals(Object)} and {@link #hashCode()} based on that id.
  *
  * @author fuchun
- * @version $Id: AbstractEntity.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: AbstractEntity.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public abstract class AbstractEntity<PK extends Serializable & Comparable<PK>, E extends AbstractEntity<PK, E>>

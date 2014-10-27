@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) AbstractEntityMeta.java 2014-10-16 16:20
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractEntityMeta.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.domain;
@@ -14,7 +14,7 @@ import java.io.Serializable;
  * {@code EntityMeta} 的基础骨干实现。
  *
  * @author fuchun
- * @version $Id: AbstractEntityMeta.java 195 2014-10-16 08:49:09Z fuchun $
+ * @version $Id: AbstractEntityMeta.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public abstract class AbstractEntityMeta<PK extends Serializable& Comparable<PK>,

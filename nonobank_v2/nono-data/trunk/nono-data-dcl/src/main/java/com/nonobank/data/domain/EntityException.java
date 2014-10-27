@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EntityException.java 2014-09-28 14:18
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EntityException.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.domain;
@@ -10,7 +10,7 @@ package com.nonobank.data.domain;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: EntityException.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: EntityException.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class EntityException extends RuntimeException {
 
@@ -62,6 +62,10 @@ public class EntityException extends RuntimeException {
     public EntityException(Integer code, String message) {
         super(message);
         this.code = code;
+    }
+
+    public EntityException(Throwable cause) {
+        super(cause);
     }
 
     public Integer getCode() {

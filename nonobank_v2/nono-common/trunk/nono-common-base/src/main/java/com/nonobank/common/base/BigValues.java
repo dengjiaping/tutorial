@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) BigValues.java 2014-10-16 14:03
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) BigValues.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.base;
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  * 大数据文本值接口，提供常用的数据转换方法。
  *
  * @author fuchun
- * @version $Id: BigValues.java 186 2014-10-16 06:17:50Z fuchun $
+ * @version $Id: BigValues.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public interface BigValues extends Values {

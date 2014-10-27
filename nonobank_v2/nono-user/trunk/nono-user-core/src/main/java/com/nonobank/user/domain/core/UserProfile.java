@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserProfile.java 2014-10-09 15:17
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserProfile.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.core;
@@ -16,7 +16,7 @@ import org.joda.time.DateTime;
  * 用户基本信息实体。
  *
  * @author fuchun
- * @version $Id: UserProfile.java 228 2014-10-21 07:38:59Z yichuan $
+ * @version $Id: UserProfile.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserProfile extends BaseUser<UserProfile> {
@@ -97,6 +97,17 @@ public class UserProfile extends BaseUser<UserProfile> {
             return null;
         }
         return UserCmdContext.userProfileRepository().findByMobileNo(mobileNO);
+    }
+
+    /**
+     * 激活邮箱地址，修改相应的属性
+     *
+     * @param isVerified 是否验证
+     */
+    public UserProfile verifyEmail(boolean isVerified) {
+        setEmailVerified(isVerified);
+        setLastModifiedDate(DateTime.now());
+        return this;
     }
 
     // 用户名

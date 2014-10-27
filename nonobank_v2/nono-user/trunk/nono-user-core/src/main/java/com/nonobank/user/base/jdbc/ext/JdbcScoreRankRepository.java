@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcScoreRankRepository.java 2014-10-15 13:49
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcScoreRankRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.ext;
@@ -18,7 +18,7 @@ import static com.nonobank.user.domain.ext.QScoreRank.qsr;
  * 积分等级信息数据查询接口
  *
  * @author Yichuan
- * @version $Id: JdbcScoreRankRepository.java 170 2014-10-15 05:54:15Z yichuan $
+ * @version $Id: JdbcScoreRankRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("scoreRankRepository")

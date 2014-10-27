@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Workmate.java 2014-10-11 09:10
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Workmate.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.related;
@@ -12,7 +12,7 @@ import java.util.Objects;
  * 同事关系实体
  *
  * @author Yichuan
- * @version $Id: Workmate.java 114 2014-10-13 01:51:44Z fuchun $
+ * @version $Id: Workmate.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class Workmate implements Serializable {

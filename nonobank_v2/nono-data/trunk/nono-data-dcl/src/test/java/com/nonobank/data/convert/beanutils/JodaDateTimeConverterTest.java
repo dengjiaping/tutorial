@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JodaDateTimeConverterTest.java 2014-10-08 12:48
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JodaDateTimeConverterTest.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.convert.beanutils;
@@ -22,7 +22,7 @@ import static org.junit.Assert.assertThat;
 
 /**
  * @author fuchun
- * @version $Id: JodaDateTimeConverterTest.java 45 2014-10-08 06:46:55Z fuchun $
+ * @version $Id: JodaDateTimeConverterTest.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class JodaDateTimeConverterTest {
 

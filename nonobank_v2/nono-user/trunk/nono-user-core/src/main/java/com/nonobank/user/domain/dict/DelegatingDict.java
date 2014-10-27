@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) DelegatingDict.java 2014-10-10 16:45
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) DelegatingDict.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -9,7 +9,7 @@ package com.nonobank.user.domain.dict;
  * {@code Dict} 接口的委托实现。
  *
  * @author fuchun
- * @version $Id: DelegatingDict.java 145 2014-10-13 09:34:53Z fuchun $
+ * @version $Id: DelegatingDict.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public final class DelegatingDict implements Dict {

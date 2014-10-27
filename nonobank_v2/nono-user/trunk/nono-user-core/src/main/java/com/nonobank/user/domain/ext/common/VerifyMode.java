@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) VerifyMode.java 2014-10-16 14:42
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) VerifyMode.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.common;
@@ -11,7 +11,7 @@ import com.nonobank.common.base.EnumValue;
  * 验证模式枚举
  *
  * @author Yichuan
- * @version $Id: VerifyMode.java 188 2014-10-16 07:00:31Z yichuan $
+ * @version $Id: VerifyMode.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public enum VerifyMode implements EnumValue<Integer> {
@@ -64,7 +64,7 @@ public enum VerifyMode implements EnumValue<Integer> {
     /**
      * 自定义
      */
-    CUSTOM(9, "自定义", "custom");
+    CUSTOM(99, "自定义", "custom");
 
     final short code;
     final String name;

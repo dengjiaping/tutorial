@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) MapAsStringTypeTest.java 2014-09-29 10:29
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) MapAsStringTypeTest.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.types;
@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 
 /**
  * @author fuchun
- * @version $Id: MapAsStringTypeTest.java 42 2014-09-29 08:27:16Z fuchun $
+ * @version $Id: MapAsStringTypeTest.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class MapAsStringTypeTest {
 

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcEmailVerifySourceRepository.java 2014-10-13 15:22
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcEmailVerifySourceRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.message;
@@ -22,7 +22,7 @@ import static com.nonobank.user.domain.message.QEmailVerifySource.qevs;
  * 验证类邮件数据查询接口
  *
  * @author Yichuan
- * @version $Id: JdbcEmailVerifySourceRepository.java 142 2014-10-13 07:30:32Z yichuan $
+ * @version $Id: JdbcEmailVerifySourceRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("emailVerifySourceRepository")

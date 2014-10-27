@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) QueryDsl.java 2014-09-28 15:59
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) QueryDsl.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.repository.support;
@@ -24,7 +24,7 @@ import java.util.Objects;
  * QueryDsl 工具方法。
  *
  * @author fuchun
- * @version $Id: QueryDsl.java 247 2014-10-22 07:27:08Z fuchun $
+ * @version $Id: QueryDsl.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class QueryDsl {

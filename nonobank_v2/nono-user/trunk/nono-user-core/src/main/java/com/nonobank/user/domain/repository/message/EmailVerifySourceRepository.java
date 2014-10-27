@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EmailVerifySourceRepository.java 2014-10-13 15:15
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EmailVerifySourceRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.repository.message;
@@ -15,7 +15,7 @@ import java.util.Objects;
  * 验证类邮件信息查询接口
  *
  * @author Yichuan
- * @version $Id: EmailVerifySourceRepository.java 141 2014-10-13 07:20:48Z yichuan $
+ * @version $Id: EmailVerifySourceRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface EmailVerifySourceRepository extends QueryDslRepository<EmailVerifySource, Long> {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Decodes.java 2014-09-25 10:38
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Decodes.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.util;
@@ -23,7 +23,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
  * Decoding utility class. Provides the {@code URL} decoding, {@code base64} decoding.
  *
  * @author fuchun
- * @version $Id: Decodes.java 203 2014-10-17 06:54:43Z yichuan $
+ * @version $Id: Decodes.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public abstract class Decodes {

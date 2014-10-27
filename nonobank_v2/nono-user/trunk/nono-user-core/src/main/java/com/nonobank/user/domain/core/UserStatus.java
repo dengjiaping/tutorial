@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserStatus.java 2014-10-09 15:56
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserStatus.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.core;
@@ -11,7 +11,7 @@ import com.nonobank.common.base.EnumValue;
  * 用户帐号状态枚举。
  *
  * @author fuchun
- * @version $Id: UserStatus.java 57 2014-10-09 08:52:35Z fuchun $
+ * @version $Id: UserStatus.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public enum UserStatus implements EnumValue<Short> {

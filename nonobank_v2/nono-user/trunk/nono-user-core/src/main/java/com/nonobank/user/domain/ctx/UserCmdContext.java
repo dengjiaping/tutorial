@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserCmdContext.java 2014-10-16 14:51
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserCmdContext.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ctx;
@@ -11,7 +11,7 @@ import com.nonobank.user.domain.repository.core.*;
  * 用户核心领域上下文。
  *
  * @author fuchun
- * @version $Id: UserCmdContext.java 189 2014-10-16 07:20:25Z fuchun $
+ * @version $Id: UserCmdContext.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public final class UserCmdContext {

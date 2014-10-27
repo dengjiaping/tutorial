@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) CommonDictRepository.java 2014-10-10 15:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CommonDictRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.repository.dict;
@@ -22,7 +22,7 @@ import static com.nonobank.user.domain.dict.QCommonDict.qcd;
  * {@link com.nonobank.user.domain.dict.CommonDict} 实体的仓储接口。
  *
  * @author fuchun
- * @version $Id: CommonDictRepository.java 257 2014-10-23 06:33:13Z fuchun $
+ * @version $Id: CommonDictRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface CommonDictRepository extends GenericRepository<CommonDict, Integer> {

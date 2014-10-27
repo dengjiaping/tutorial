@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) CityDTO.java 2014-10-21 12:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CityDTO.java 2014-10-27 16:40
  */
 
 package com.nonobank.user.facade.dto.dict;
@@ -11,7 +11,7 @@ import java.util.List;
  * The DTO of the {@code City} "entity".
  *
  * @author fuchun
- * @version $Id: CityDTO.java 233 2014-10-21 09:13:58Z fuchun $
+ * @version $Id: CityDTO.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class CityDTO extends AbstractArea {

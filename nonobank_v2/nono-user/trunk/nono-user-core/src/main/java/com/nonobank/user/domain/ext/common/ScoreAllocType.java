@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ScoreAllocType.java 2014-10-20 09:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ScoreAllocType.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.common;
@@ -12,7 +12,7 @@ import com.nonobank.common.base.EnumValue;
  * 积分配置分类枚举
  *
  * @author Yichuan
- * @version $Id: ScoreAllocType.java 219 2014-10-20 06:48:31Z yichuan $
+ * @version $Id: ScoreAllocType.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public enum ScoreAllocType implements EnumValue<Integer> {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcUserID5RecordRepository.java 2014-10-17 17:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcUserID5RecordRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.ext;
@@ -18,7 +18,7 @@ import static com.nonobank.user.domain.ext.QUserID5Record.quir;
  * 国政通(第三方)验证记录数据查询接口
  *
  * @author Yichuan
- * @version $Id: JdbcUserID5RecordRepository.java 208 2014-10-17 09:36:17Z yichuan $
+ * @version $Id: JdbcUserID5RecordRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("userId5RecordRepository")

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Exist.java 2014-10-10 13:54
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Exist.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -10,7 +10,7 @@ import com.nonobank.common.base.EnumValue;
 
 /**
  * @author Yichuan
- * @version $Id: Exist.java 260 2014-10-23 07:18:22Z yichuan $
+ * @version $Id: Exist.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public enum Exist implements EnumValue<String> {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserOption.java 2014-10-16 11:26
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserOption.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.core;
@@ -13,7 +13,7 @@ import com.nonobank.data.domain.AbstractEntity;
  * 用户偏好配置选择实体。
  *
  * @author fuchun
- * @version $Id: UserOption.java 196 2014-10-16 08:54:06Z fuchun $
+ * @version $Id: UserOption.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserOption extends AbstractEntity<Long, UserOption>

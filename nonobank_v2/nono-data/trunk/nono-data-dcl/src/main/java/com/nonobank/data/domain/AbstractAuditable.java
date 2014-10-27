@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractAuditable.java 2014-10-27 16:48
+ */
+
 package com.nonobank.data.domain;
 
 import org.springframework.data.domain.Auditable;
@@ -8,7 +13,7 @@ import java.io.Serializable;
  * Abstract base class for auditable entities. Stores the audition values in entity fields.
  *
  * @author fuchun
- * @version $Id: AbstractAuditable.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: AbstractAuditable.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public abstract class AbstractAuditable<

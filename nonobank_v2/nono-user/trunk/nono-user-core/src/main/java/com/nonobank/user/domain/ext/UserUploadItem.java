@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserUploadItem.java 2014-10-20 15:07
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserUploadItem.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext;
@@ -13,7 +13,7 @@ import org.joda.time.DateTime;
  * 用户上传文件信息实体
  *
  * @author Yichuan
- * @version $Id: UserUploadItem.java 226 2014-10-21 03:58:47Z yichuan $
+ * @version $Id: UserUploadItem.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserUploadItem extends AbstractEntity<Long, UserUploadItem> {

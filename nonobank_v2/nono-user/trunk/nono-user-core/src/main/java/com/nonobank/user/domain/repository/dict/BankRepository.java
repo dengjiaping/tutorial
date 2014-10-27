@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) BankRepository.java 2014-10-16 10:40
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) BankRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.repository.dict;
@@ -20,7 +20,7 @@ import static com.nonobank.user.domain.dict.QBank.qb;
  * The {@code Bank} entity repository.
  *
  * @author fuchun
- * @version $Id: BankRepository.java 183 2014-10-16 03:14:52Z fuchun $
+ * @version $Id: BankRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public interface BankRepository extends QueryDslPredicateExecutor<Bank> {

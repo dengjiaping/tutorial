@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserScoreIncome.java 2014-10-17 09:16
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserScoreIncome.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext;
@@ -13,7 +13,7 @@ import org.joda.time.DateTime;
  * 用户积分收入详细
  *
  * @author Yichuan
- * @version $Id: UserScoreIncome.java 210 2014-10-20 01:12:49Z yichuan $
+ * @version $Id: UserScoreIncome.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserScoreIncome extends AbstractRecording<Long, UserScoreIncome> {

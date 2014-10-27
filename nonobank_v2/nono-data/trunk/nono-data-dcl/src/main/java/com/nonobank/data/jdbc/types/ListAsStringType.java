@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ListAsStringType.java 2014-09-29 08:56
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ListAsStringType.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.types;
@@ -24,7 +24,7 @@ import java.util.List;
  * QueryDSL List&lt;String&gt; 与{@code String} 类型转换器。
  *
  * @author fuchun
- * @version $Id: ListAsStringType.java 42 2014-09-29 08:27:16Z fuchun $
+ * @version $Id: ListAsStringType.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public class ListAsStringType<T> extends AbstractType<List<T>> {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ImmutablePair.java 2014-09-24 16:05
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ImmutablePair.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.tuple;
@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  *
  * @since Lang 3.0
  * @author scolebourne
- * @version $Id: ImmutablePair.java 26 2014-09-24 08:09:03Z fuchun $
+ * @version $Id: ImmutablePair.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public final class ImmutablePair<L, R> extends Pair<L, R> {
 

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) QCollege.java 2014-10-13 17:36
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) QCollege.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -22,7 +22,7 @@ import static java.sql.Types.*;
 
 /**
  * QCollege is a Querydsl query type for College
- * @version $Id: QCollege.java 198 2014-10-17 02:35:50Z fuchun $
+ * @version $Id: QCollege.java 289 2014-10-27 08:46:50Z fuchun $
  */
 @Generated("com.mysema.query.codegen.SupertypeSerializer")
 public class QCollege extends RelationalPathBase<College> {

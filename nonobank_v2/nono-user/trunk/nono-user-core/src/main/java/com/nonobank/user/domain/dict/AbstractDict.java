@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) AbstractDict.java 2014-10-10 16:18
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractDict.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.dict;
@@ -14,7 +14,7 @@ import com.nonobank.data.domain.AbstractEntity;
  * {@code Dict} 接口的骨干实现。
  *
  * @author fuchun
- * @version $Id: AbstractDict.java 256 2014-10-23 03:29:06Z fuchun $
+ * @version $Id: AbstractDict.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public abstract class AbstractDict<E extends AbstractDict<E>>

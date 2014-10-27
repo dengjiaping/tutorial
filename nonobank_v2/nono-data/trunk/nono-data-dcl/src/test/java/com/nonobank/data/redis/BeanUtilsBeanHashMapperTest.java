@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) BeanUtilsBeanHashMapperTest.java 2014-10-08 15:22
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) BeanUtilsBeanHashMapperTest.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.redis;
@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * BeanUtilsBeanHashMapper test case.
  *
- * @version $Id: BeanUtilsBeanHashMapperTest.java 47 2014-10-08 07:39:43Z fuchun $
+ * @version $Id: BeanUtilsBeanHashMapperTest.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class BeanUtilsBeanHashMapperTest {
 

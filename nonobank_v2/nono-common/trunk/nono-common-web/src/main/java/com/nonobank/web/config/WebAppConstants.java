@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) WebAppConstants.java 2014-09-26 12:31
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) WebAppConstants.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.config;
@@ -9,7 +9,7 @@ package com.nonobank.web.config;
  * The web app constants utility class.
  *
  * @author fuchun
- * @version $Id: WebAppConstants.java 29 2014-09-26 07:10:32Z fuchun $
+ * @version $Id: WebAppConstants.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public abstract class WebAppConstants {

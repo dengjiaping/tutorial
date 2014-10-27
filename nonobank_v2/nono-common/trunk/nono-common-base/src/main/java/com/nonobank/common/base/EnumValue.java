@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) EnumValue.java 2014-09-24 15:40
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) EnumValue.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.base;
@@ -10,7 +10,7 @@ package com.nonobank.common.base;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: EnumValue.java 22 2014-09-24 07:45:00Z fuchun $
+ * @version $Id: EnumValue.java 290 2014-10-27 08:48:18Z fuchun $
  */
 public interface EnumValue<V> {
 

@@ -1,7 +1,7 @@
 
 -- 重构前的数据导入重构后的数据库 - 用户系统
 -- created by Fuchun 2014-10-13
--- @(#) version $Id: users_import.sql 243 2014-10-22 05:36:36Z yichuan $
+-- @(#) version $Id: users_import.sql 281 2014-10-24 08:41:15Z fuchun $
 
 -- ---------------------------------------------------------------------------------
 -- 会员表数据处理
@@ -113,6 +113,11 @@ UPDATE members_field_details SET skillcert = null WHERE skillcert = '';
 UPDATE members_field_details m SET m.marriage = null WHERE m.marriage = 0;
 UPDATE members_field_details m SET m.education = null WHERE m.education = 0;
 UPDATE members_field_details m SET m.job = null WHERE m.job = 0;
+
+-- 修复脏数据 institution
+UPDATE members_field_details SET institution = NULL WHERE institution = '杭州';
+UPDATE members_field_details SET institution = '中国矿业大学(徐州)' WHERE institution = '中国矿业大学';
+UPDATE members_field_details SET into_school_time = NULL WHERE into_school_time <= 1949;
 
 
 -- 导 USER_PROFILE 表
@@ -227,3 +232,11 @@ INSERT INTO USER_UPLOAD(ID,USER_ID,UPLOAD_TYPE_ID,UPLOAD_CONTENT,AUDIT_STATUS,AU
 -- 导用户国政通查询信息表USER_ID5_RECORD
 INSERT INTO USER_ID5_RECORD(ID,USER_ID,REAL_NAME,ID_CARD,SCHOOL_NAME,EDUCATION,ENTRANCE_TIME,PROFESSION,GRADUATION,STUDY_RESULT,STUDY_CHANNEL)
   (SELECT m.mier_id,m.m_id,m.mier_name,m.mier_idnum,m.mier_graduate,m.mier_educationdegree,m.mier_enroldate,m.mier_specialityname,m.mier_graduatetime,m.mier_studyresult,m.mier_studystyle FROM member_id5_edu_record m);
+
+
+-- 导入 USER_STUDENT 表数据
+INSERT INTO USER_STUDENT
+(USER_ID, COLLEGE_ID, COLLEGE_NAME, CAMPUS, MAJOR, STUDENT_NO, ATTN_YEAR, EDU_CODE)
+  SELECT mf.m_id, dc.ID, dc.C_NAME, mf.address_school, mf.major,
+    mf.mfd_student_sn, mf.into_school_time, mf.education FROM members_field_details mf, DICT_COLLEGE dc
+  WHERE mf.institution = dc.C_NAME AND mf.institution IS NOT NULL;

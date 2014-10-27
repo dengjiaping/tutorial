@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) Encodes.java 2014-09-25 10:03
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) Encodes.java 2014-10-27 16:47
  */
 
 package com.nonobank.common.util;
@@ -24,7 +24,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
  * Encoding utility class. Provides the {@code URL} encoding, {@code base64} encoding.
  *
  * @author fuchun
- * @version $Id: Encodes.java 203 2014-10-17 06:54:43Z yichuan $
+ * @version $Id: Encodes.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public abstract class Encodes {

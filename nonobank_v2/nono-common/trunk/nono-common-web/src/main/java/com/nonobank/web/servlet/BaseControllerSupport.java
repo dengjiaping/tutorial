@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ControllerSupport.java 2014-09-26 12:23
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) BaseControllerSupport.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.servlet;
@@ -25,7 +25,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * 方法，自定义实现视图的路径处理（响应式设计）。
  *
  * @author fuchun
- * @version $Id: BaseControllerSupport.java 29 2014-09-26 07:10:32Z fuchun $
+ * @version $Id: BaseControllerSupport.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 @Controller

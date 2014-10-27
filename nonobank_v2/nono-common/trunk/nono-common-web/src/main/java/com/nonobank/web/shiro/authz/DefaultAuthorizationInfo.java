@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) DefaultAuthorizationInfo.java 2014-09-26 16:12
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) DefaultAuthorizationInfo.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.shiro.authz;
@@ -19,7 +19,7 @@ import java.util.Set;
  * Default {@code AuthorizationInfo} implementation.
  *
  * @author Fuchun
- * @version $Id: DefaultAuthorizationInfo.java 32 2014-09-26 08:16:39Z fuchun $
+ * @version $Id: DefaultAuthorizationInfo.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public class DefaultAuthorizationInfo extends SimpleAuthorizationInfo {

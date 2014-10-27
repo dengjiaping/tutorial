@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) JdbcUserFieldRepository.java 2014-10-16 15:26
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) JdbcUserFieldRepository.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.base.jdbc.ext;
@@ -22,7 +22,7 @@ import static com.nonobank.user.domain.ext.QUserField.quf;
  * 用户属性数据查询接口
  *
  * @author Yichuan
- * @version $Id: JdbcUserFieldRepository.java 190 2014-10-16 08:17:43Z yichuan $
+ * @version $Id: JdbcUserFieldRepository.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 @Repository("userFieldRepository")

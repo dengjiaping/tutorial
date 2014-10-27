@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) BaseUser.java 2014-10-09 15:02
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) BaseUser.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.core;
@@ -14,7 +14,7 @@ import com.nonobank.data.domain.AbstractRecording;
  * 包含{@code userId}、{@code lastModifiedDate} 和{@code createdDate} 属性。
  *
  * @author fuchun
- * @version $Id: BaseUser.java 56 2014-10-09 07:45:35Z fuchun $
+ * @version $Id: BaseUser.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public abstract class BaseUser<T extends BaseUser<T>> extends AbstractRecording<Long, T> {

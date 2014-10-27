@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) CustomAbstactMonitoringInterceptor.java 2014-09-24 16:24
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) CustomAbstractMonitoringInterceptor.java 2014-10-27 16:47
  */
 
 package com.nonobank.spring.aop.interceptor;
@@ -20,7 +20,7 @@ import java.lang.reflect.*;
  * method invocation under trace along with the prefix and suffix added as appropriate.
  *
  * @author fuchun
- * @version $Id: CustomAbstractMonitoringInterceptor.java 30 2014-09-26 07:31:15Z fuchun $
+ * @version $Id: CustomAbstractMonitoringInterceptor.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public abstract class CustomAbstractMonitoringInterceptor

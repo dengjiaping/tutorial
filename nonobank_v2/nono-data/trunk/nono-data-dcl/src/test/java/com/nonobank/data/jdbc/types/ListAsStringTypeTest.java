@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) ListAsStringTypeTest.java 2014-09-29 09:19
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) ListAsStringTypeTest.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.jdbc.types;
@@ -27,7 +27,7 @@ import static org.junit.Assert.assertThat;
 
 /**
  * @author fuchun
- * @version $Id: ListAsStringTypeTest.java 42 2014-09-29 08:27:16Z fuchun $
+ * @version $Id: ListAsStringTypeTest.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public class ListAsStringTypeTest {
 

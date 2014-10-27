@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) UserProfileDTO.java 2014-10-23 14:37
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) UserProfileDTO.java 2014-10-27 16:40
  */
 
 package com.nonobank.user.facade.dto.core;
@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 /**
  * @author Yichuan
- * @version $Id: UserProfileDTO.java 260 2014-10-23 07:18:22Z yichuan $
+ * @version $Id: UserProfileDTO.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class UserProfileDTO implements Serializable {

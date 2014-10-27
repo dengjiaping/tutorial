@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) MoreWebUtils.java 2014-10-21 08:41
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) MoreWebUtils.java 2014-10-27 16:47
  */
 
 package com.nonobank.web.util;
@@ -26,7 +26,7 @@ import static org.springframework.util.StringUtils.hasText;
  * 是一个很好的补充。
  *
  * @author fuchun
- * @version $Id: MoreWebUtils.java 224 2014-10-21 02:03:41Z fuchun $
+ * @version $Id: MoreWebUtils.java 290 2014-10-27 08:48:18Z fuchun $
  * @since 2.0
  */
 public abstract class MoreWebUtils {

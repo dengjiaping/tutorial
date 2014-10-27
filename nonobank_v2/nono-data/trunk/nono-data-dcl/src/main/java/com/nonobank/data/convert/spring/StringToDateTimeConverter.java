@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) StringToDateTimeConverter.java 2014-09-29 14:22
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) StringToDateTimeConverter.java 2014-10-27 16:48
  */
 
 package com.nonobank.data.convert.spring;
@@ -15,7 +15,7 @@ import org.springframework.core.convert.converter.Converter;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: StringToDateTimeConverter.java 43 2014-09-29 08:33:44Z fuchun $
+ * @version $Id: StringToDateTimeConverter.java 291 2014-10-27 08:49:07Z fuchun $
  */
 public enum  StringToDateTimeConverter implements Converter<String, DateTime> {
     INSTANCE;

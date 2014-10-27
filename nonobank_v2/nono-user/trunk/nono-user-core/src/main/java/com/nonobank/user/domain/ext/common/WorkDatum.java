@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2009-2014. 上海诺诺谤客 All rights reserved.
- * @(#) WorkDatum.java 2014-10-22 15:23
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) WorkDatum.java 2014-10-27 16:41
  */
 
 package com.nonobank.user.domain.ext.common;
@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 用户工作单位信息
  *
  * @author Yichuan
- * @version $Id: WorkDatum.java 248 2014-10-22 08:12:56Z yichuan $
+ * @version $Id: WorkDatum.java 289 2014-10-27 08:46:50Z fuchun $
  * @since 2.0
  */
 public class WorkDatum implements Serializable {

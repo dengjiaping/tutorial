@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2009-2014. 上海诺诺镑客 All rights reserved.
+ * @(#) AbstractRecording.java 2014-10-27 16:48
+ */
+
 package com.nonobank.data.domain;
 
 import org.joda.time.DateTime;
@@ -9,7 +14,7 @@ import java.io.Serializable;
  *
  * @param <PK> the type of the recording type's identifier.
  * @author fuchun
- * @version $Id: AbstractRecording.java 40 2014-09-28 06:39:52Z fuchun $
+ * @version $Id: AbstractRecording.java 291 2014-10-27 08:49:07Z fuchun $
  * @since 2.0
  */
 public abstract class AbstractRecording<
