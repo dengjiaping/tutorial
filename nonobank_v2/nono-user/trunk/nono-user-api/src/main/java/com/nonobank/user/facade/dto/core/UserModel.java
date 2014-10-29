@@ -5,19 +5,18 @@
 
 package com.nonobank.user.facade.dto.core;
 
-import org.springframework.util.MultiValueMap;
-
 import java.io.Serializable;
 
 /**
  * 用户帐号注册模型。
  *
  * @author fuchun
- * @version $Id: UserModel.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserModel.java 298 2014-10-29 03:05:00Z fuchun $
  * @since 2.0
  */
 public class UserModel implements Serializable {
 
+    public static final String PROP_TOKEN = "token";
     public static final String PROP_USER_NAME = "userName";
     public static final String PROP_MOBILE_NO = "mobileNo";
     public static final String PROP_MOBILE_CAPTCHA = "mobileCaptcha";
@@ -26,6 +25,8 @@ public class UserModel implements Serializable {
 
     private static final long serialVersionUID = -7869399240000792511L;
 
+    /** 特殊值（FORM表单的校验码） */
+    private String s_token;
     private String userName;
     private String mobileNo;
     private String mobileCaptcha;
@@ -34,7 +35,17 @@ public class UserModel implements Serializable {
 
     private Short identity;
 
-    private MultiValueMap<String, String> extended;
+    public UserModel() {
+        super();
+    }
+
+    public String getS_token() {
+        return s_token;
+    }
+
+    public void setS_token(String s_token) {
+        this.s_token = s_token;
+    }
 
     public String getUserName() {
         return userName;
@@ -82,13 +93,5 @@ public class UserModel implements Serializable {
 
     public void setIdentity(Short identity) {
         this.identity = identity;
-    }
-
-    public MultiValueMap<String, String> getExtended() {
-        return extended;
-    }
-
-    public void setExtended(MultiValueMap<String, String> extended) {
-        this.extended = extended;
     }
 }

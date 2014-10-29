@@ -16,7 +16,7 @@ import org.joda.time.DateTime;
  * 用户基本信息实体。
  *
  * @author fuchun
- * @version $Id: UserProfile.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserProfile.java 295 2014-10-28 08:01:18Z yichuan $
  * @since 2.0
  */
 public class UserProfile extends BaseUser<UserProfile> {
@@ -97,17 +97,6 @@ public class UserProfile extends BaseUser<UserProfile> {
             return null;
         }
         return UserCmdContext.userProfileRepository().findByMobileNo(mobileNO);
-    }
-
-    /**
-     * 激活邮箱地址，修改相应的属性
-     *
-     * @param isVerified 是否验证
-     */
-    public UserProfile verifyEmail(boolean isVerified) {
-        setEmailVerified(isVerified);
-        setLastModifiedDate(DateTime.now());
-        return this;
     }
 
     // 用户名
@@ -451,5 +440,31 @@ public class UserProfile extends BaseUser<UserProfile> {
                 .add(PROP_USER_TYPE_TIME, getUserTypeTime())
                 .add(PROP_LAST_MODIFIED_DATE, getLastModifiedDate())
                 .add(PROP_CREATED_DATE, getCreatedDate()).toString();
+    }
+
+    /**
+     * 激活邮箱地址，修改相应的属性
+     *
+     * @param isVerified 是否验证
+     */
+    public UserProfile verifyEmail(boolean isVerified) {
+        setEmailVerified(isVerified);
+        setLastModifiedDate(DateTime.now());
+        return this;
+    }
+
+    /**
+     * 修改用户类型
+     *
+     * @param userType 用户类型
+     */
+    public UserProfile changeUserType(String userType) {
+        return changeUserType(userType, null);
+    }
+    public UserProfile changeUserType(String userType, DateTime changeTime) {
+        if (changeTime == null) changeTime = DateTime.now();
+        setUserType(userType);
+        setUserTypeTime(changeTime);
+        return this;
     }
 }

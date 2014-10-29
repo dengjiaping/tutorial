@@ -10,15 +10,17 @@ import com.nonobank.user.service.UserAccountService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
 /**
  * @author Yichuan
- * @version $Id: UserAccountServiceImpl.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserAccountServiceImpl.java 293 2014-10-28 06:01:08Z yichuan $
  * @since 2.0
  */
 @Service("userAccountService")
+@Transactional(readOnly = true)
 public class UserAccountServiceImpl implements UserAccountService {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());

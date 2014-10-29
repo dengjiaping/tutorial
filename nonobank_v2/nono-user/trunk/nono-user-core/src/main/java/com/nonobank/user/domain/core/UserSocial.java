@@ -7,13 +7,16 @@ package com.nonobank.user.domain.core;
 
 import com.google.common.base.MoreObjects;
 import com.nonobank.data.domain.AbstractRecording;
+import com.nonobank.user.domain.ctx.UserCmdContext;
 import org.joda.time.DateTime;
+
+import javax.annotation.Nonnull;
 
 /**
  * 第三方平台用户来源信息实体。
  *
  * @author fuchun
- * @version $Id: UserSocial.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserSocial.java 295 2014-10-28 08:01:18Z yichuan $
  * @since 2.0
  */
 public class UserSocial extends AbstractRecording<Long, UserSocial> {
@@ -51,6 +54,36 @@ public class UserSocial extends AbstractRecording<Long, UserSocial> {
         super();
         setId(id);
         this.userId = userId;
+    }
+
+    @Nonnull
+    public static UserSocial getOfUserId(Long userId, SocialSource socialSource) {
+        return UserCmdContext.userSocialRepository().findByUserIdAndAccSource(userId, socialSource);
+    }
+
+    @Nonnull
+    public static UserSocial getOfOpenId(String openId, SocialSource socialSource) {
+        return UserCmdContext.userSocialRepository().findByOpenIdAndAccSource(openId, socialSource);
+    }
+
+    public UserSocial(Long userId, String userName, String openId, SocialSource socialSource,
+                      String authToken, Long period, DateTime tokenUpdateTime) {
+        this.userId = userId;
+        this.userName = userName;
+        this.openId = openId;
+        this.socialSource = socialSource;
+        this.authToken = authToken;
+        this.period = period;
+        this.tokenUpdateTime = tokenUpdateTime;
+    }
+
+    public static UserSocial create(Long userId, String userName, String openId, SocialSource socialSource,
+                                    String authToken, Long period, DateTime tokenUpdateTime,
+                                    DateTime lastModifiedDate, DateTime createdDate) {
+        UserSocial userSocial = new UserSocial(userId, userName, openId, socialSource, authToken, period, tokenUpdateTime);
+        userSocial.setLastModifiedDate(lastModifiedDate);
+        userSocial.setCreatedDate(createdDate);
+        return userSocial;
     }
 
     public Long getUserId() {

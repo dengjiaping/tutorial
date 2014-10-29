@@ -11,6 +11,7 @@ import com.google.common.base.Strings;
 import com.nonobank.common.base.RandomStrings;
 import com.nonobank.user.domain.ctx.UserCmdContext;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.joda.time.DateTime;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -23,7 +24,7 @@ import static com.google.common.base.Preconditions.checkArgument;
  * 用户帐号实体。
  *
  * @author fuchun
- * @version $Id: UserAccount.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserAccount.java 298 2014-10-29 03:05:00Z fuchun $
  * @since 2.0
  */
 public class UserAccount extends BaseUser<UserAccount> {
@@ -122,6 +123,18 @@ public class UserAccount extends BaseUser<UserAccount> {
                 .findByUserName(userName);
     }
 
+    public static UserAccount newUser(
+            String userName, String mobileNO, String password) {
+        UserAccount user = new UserAccount();
+        user.setUserName(userName);
+        user.setMobileNO(mobileNO);
+        user.changePasswd(password, null);
+        user.setLastModifiedDate(DateTime.now());
+        user.setCreatedDate(DateTime.now());
+        user.setStatus(UserStatus.NOT_ACTIVE);
+        return user;
+    }
+
     /**
      * 对指定的密码使用指定的密码盐进行{@code hash} 操作。
      *
@@ -213,6 +226,9 @@ public class UserAccount extends BaseUser<UserAccount> {
 
     public void setUserName(String userName) {
         this.userName = userName;
+        if (userName != null && userName.length() > 0) {
+            hashedKey = DigestUtils.md5Hex(userName);
+        }
     }
 
     public String getHashedKey() {

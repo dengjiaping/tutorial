@@ -6,14 +6,17 @@
 package com.nonobank.user.domain.core;
 
 import com.google.common.base.MoreObjects;
+import com.nonobank.user.domain.ctx.UserCmdContext;
 import com.nonobank.user.domain.dict.Dict;
 import org.joda.time.DateTime;
+
+import javax.annotation.Nonnull;
 
 /**
  * 用户认证信息实体。
  *
  * @author fuchun
- * @version $Id: UserAuthc.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserAuthc.java 296 2014-10-28 09:34:19Z yichuan $
  * @since 2.0
  */
 public class UserAuthc extends BaseUser<UserAuthc> {
@@ -288,5 +291,102 @@ public class UserAuthc extends BaseUser<UserAuthc> {
                 .add(PROP_ENTRANCE_YEAR, getEntranceYear())
                 .add(PROP_STU_VERIFIED, isStuVerified())
                 .add(PROP_FACE_VERIFIED, isFaceVerified()).toString();
+    }
+
+    @Nonnull
+    public static UserAuthc get(Long userId) {
+        return UserCmdContext.userAuthcRepository().findOne(userId);
+    }
+
+    /**
+     * 创建用户认证信息
+     *
+     * @param userId    用户ID
+     * @param userName  用户名
+     */
+    public static UserAuthc create(Long userId, String userName) {
+        UserAuthc userAuthc = new UserAuthc();
+        userAuthc.setUserId(userId);
+        userAuthc.setUserName(userName);
+        DateTime now = DateTime.now();
+        userAuthc.setLastModifiedDate(now);
+        userAuthc.setCreatedDate(now);
+        return userAuthc;
+    }
+
+    /**
+     * 更新手机认证信息
+     *
+     * @param mobileNO  手机号码
+     * @param isVerify  是否通过验证
+     */
+    public UserAuthc updateMobile(String mobileNO, Boolean isVerify) {
+        setMobileNO(mobileNO);
+        setMobileVerified(isVerify);
+        return this;
+    }
+
+    /**
+     * 更新邮箱地址认证信息
+     *
+     * @param email     邮箱地址
+     * @param isVerify  是否通过验证
+     */
+    public UserAuthc updateEmail(String email, Boolean isVerify) {
+        setEmail(email);
+        setEmailVerified(isVerify);
+        return this;
+    }
+
+    /**
+     * 更新身份认证信息
+     *
+     * @param realName  真实姓名
+     * @param idCard    身份证号码
+     * @param isVerify  是否通过验证
+     */
+    public UserAuthc updateIdCard(String realName, String idCard, Boolean isVerify) {
+        setRealName(realName);
+        setIdCard(idCard);
+        setCardVerified(isVerify);
+        return this;
+    }
+
+    /**
+     * 提交学历证书唯一验证码
+     * <p />
+     *  工作人员会在一个工作日内完成认证
+     *
+     * @param eduValidCode
+     */
+    public UserAuthc submitEduCode(String eduValidCode) {
+        setEduValidCode(eduValidCode);
+        setEduCreateTime(DateTime.now());
+        setEduVerified(false);
+        return this;
+    }
+
+    /**
+     * 更新学籍认证信息
+     *
+     * @param location      院校所在省市
+     * @param univName      院校名
+     * @param campus        校区
+     * @param entranceYear  入学年份
+     * @param stuNum        学号
+     * @param profession    专业
+     * @param education     学历
+     */
+    public UserAuthc updateSchRoll(String location, String univName, String campus,
+                                   Integer entranceYear, String stuNum, String profession, Dict education) {
+        setUnivLocation(location);
+        setUnivName(univName);
+        setCampus(campus);
+        setEntranceYear(entranceYear);
+        setStuNumber(stuNum);
+        setProfession(profession);
+        setEducation(education);
+        setStuVerified(false);
+        return this;
     }
 }

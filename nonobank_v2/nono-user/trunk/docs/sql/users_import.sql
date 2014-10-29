@@ -1,7 +1,7 @@
 
 -- 重构前的数据导入重构后的数据库 - 用户系统
 -- created by Fuchun 2014-10-13
--- @(#) version $Id: users_import.sql 281 2014-10-24 08:41:15Z fuchun $
+-- @(#) version $Id: users_import.sql 300 2014-10-29 08:32:39Z yichuan $
 
 -- ---------------------------------------------------------------------------------
 -- 会员表数据处理
@@ -240,3 +240,10 @@ INSERT INTO USER_STUDENT
   SELECT mf.m_id, dc.ID, dc.C_NAME, mf.address_school, mf.major,
     mf.mfd_student_sn, mf.into_school_time, mf.education FROM members_field_details mf, DICT_COLLEGE dc
   WHERE mf.institution = dc.C_NAME AND mf.institution IS NOT NULL;
+
+-- 导入 USER_CRIMINAL 表数据
+ALTER TABLE `members_field_details`
+ADD INDEX `idx_mfd_criminal_status` (`m_criminal_status`) USING BTREE ;
+
+INSERT INTO USER_CRIMINAL (USER_ID, USER_NAME, CRIMINAL_STATUS, CRIMINAL_INFO, LAST_MODIFIED_DATE, CREATED_DATE)
+  (SELECT m.m_id, m.m_username, mf.m_criminal_status, mf.m_criminal_info, mf.m_criminal_deal_time, m.time FROM members m, members_field_details mf WHERE m.m_id = mf.m_id and mf.m_criminal_status is not null and mf.m_criminal_status != '');
