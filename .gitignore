@@ -14,9 +14,9 @@
 hs_err_pid*
 
 # project file
-../.idea
+.idea/
 .iml
-/.idea
+
 
 # class folder
 target
@@ -24,3 +24,5 @@ test-output
 libs
 .idea
 
+
+*/.idea
