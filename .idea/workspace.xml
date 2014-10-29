@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e706a633-e7a1-4d75-adfb-73e8f9c0de2a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nonobank_v2/nono-parent/trunk/pom.xml" afterPath="$PROJECT_DIR$/nonobank_v2/nono-parent/trunk/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial.iml" afterPath="$PROJECT_DIR$/tutorial.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcases/invitation.md" afterPath="$PROJECT_DIR$/testcases/invitation.md" />
+    </list>
+    <list id="81e142b3-03f1-45a0-a18e-0da12ddd69e5" name="excludefiles" comment="excludefiles">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tutorial.iws" />
@@ -13,6 +12,7 @@
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +20,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_TOOLBAR" value="true" />
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -35,31 +47,46 @@
       <file leaf-file-name="FileHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/utils/FileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invitation.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="invitation.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcases/invitation.md">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <caret line="3" column="109" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="109" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+          <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16156463" vertical-offset="24" max-vertical-offset="612">
+              <caret line="7" column="105" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4955157" vertical-offset="0" max-vertical-offset="892">
+            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="licai_statistics.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases/licai_statistics.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="374">
+              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -70,14 +97,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/dev/git_rep/java/spring-framework/gradle" value="4225204605000" />
+      </map>
+    </option>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1374" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -104,6 +148,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -132,14 +178,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs_sample" />
+              <option name="myItemId" value="testcases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,6 +195,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -277,6 +322,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
@@ -409,46 +459,58 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e706a633-e7a1-4d75-adfb-73e8f9c0de2a" name="Default" comment="" />
+      <changelist id="81e142b3-03f1-45a0-a18e-0da12ddd69e5" name="excludefiles" comment="excludefiles" />
       <created>1414385044857</created>
       <option name="number" value="Default" />
       <updated>1414385044857</updated>
-      <workItem from="1414385050684" duration="7236000" />
+      <workItem from="1414385050684" duration="7971000" />
+      <workItem from="1414461634885" duration="9499000" />
+      <workItem from="1414546454618" duration="658000" />
+      <workItem from="1414548655537" duration="3488000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/simonpatrick/tutorial&#10;&#10;Conflicts:&#10;&#9;.idea/misc.xml&#10;&#9;.idea/workspace.xml&#10;&#9;nodejs_sample/bin/www&#10;&#9;nodejs_sample/node_modules/.bin/jade&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/LICENSE&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/README.md&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/index.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/parse.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/stringify.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/utils.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/package.json&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/test/parse.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/test/stringify.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/LICENSE&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/README.md&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/index.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/parse.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/stringify.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/utils.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/package.json&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/test/parse.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/test/stringify.js&#10;&#9;nodejs_sample/node_modules/jade/bin/jade.js&#10;&#9;nodejs_sample/node_modules/jade/jade.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/.bin/mkdirp&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/async/lib/async.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/mkdirp/bin/cmd.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/history.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/lib/shared.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/lib/transformers.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/Readme.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/readme.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/async/lib/async.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/.travis.yml&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/test/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/vars.js&#10;">
+      <created>1414406929159</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1414406929159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7236000" />
+    <option name="totallyTimeSpent" value="21616000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1374" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17609392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -466,17 +528,131 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Merge branch 'master' of https://github.com/simonpatrick/tutorial&#10;&#10;Conflicts:&#10;&#9;.idea/misc.xml&#10;&#9;.idea/workspace.xml&#10;&#9;nodejs_sample/bin/www&#10;&#9;nodejs_sample/node_modules/.bin/jade&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/LICENSE&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/README.md&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/index.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/parse.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/stringify.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/utils.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/package.json&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/test/parse.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/test/stringify.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/LICENSE&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/README.md&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/index.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/parse.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/stringify.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/utils.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/package.json&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/test/parse.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/test/stringify.js&#10;&#9;nodejs_sample/node_modules/jade/bin/jade.js&#10;&#9;nodejs_sample/node_modules/jade/jade.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/.bin/mkdirp&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/async/lib/async.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/mkdirp/bin/cmd.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/history.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/lib/shared.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/lib/transformers.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/Readme.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/readme.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/async/lib/async.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/.travis.yml&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/test/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/vars.js&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/simonpatrick/tutorial&#10;&#10;Conflicts:&#10;&#9;.idea/misc.xml&#10;&#9;.idea/workspace.xml&#10;&#9;nodejs_sample/bin/www&#10;&#9;nodejs_sample/node_modules/.bin/jade&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/LICENSE&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/README.md&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/index.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/parse.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/stringify.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/lib/utils.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/package.json&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/test/parse.js&#10;&#9;nodejs_sample/node_modules/body-parser/node_modules/qs/test/stringify.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/LICENSE&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/README.md&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/index.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/parse.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/stringify.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/lib/utils.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/package.json&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/test/parse.js&#10;&#9;nodejs_sample/node_modules/express/node_modules/qs/test/stringify.js&#10;&#9;nodejs_sample/node_modules/jade/bin/jade.js&#10;&#9;nodejs_sample/node_modules/jade/jade.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/.bin/mkdirp&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/character-parser/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/async/lib/async.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/mkdirp/bin/cmd.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/history.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/lib/shared.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/lib/transformers.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/Readme.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/readme.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/transformers/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/.bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/bin/uglifyjs&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/async/lib/async.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/test/_/bin.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/.npmignore&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/.travis.yml&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/LICENSE&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/README.md&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/test/index.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/node_modules/uglify-js/test/run-tests.js&#10;&#9;nodejs_sample/node_modules/jade/node_modules/with/vars.js&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/utils/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/invitation.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/licai_statistics.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/utils/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/invitation.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/licai_statistics.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/utils/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/invitation.md">
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="238">
+          <caret line="3" column="109" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/yaml/YamlBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -484,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -492,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -500,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -508,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10967742" vertical-offset="0" max-vertical-offset="620">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,25 +688,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/licai_statistics.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="374">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcases/invitation.md">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="3" column="109" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+      <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4955157" vertical-offset="0" max-vertical-offset="892">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.16156463" vertical-offset="24" max-vertical-offset="612">
+          <caret line="7" column="105" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="105" />
           <folding />
         </state>
       </provider>
