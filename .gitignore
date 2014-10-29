@@ -19,10 +19,6 @@ hs_err_pid*
 
 
 # class folder
-target
-test-output
-libs
-.idea
-
-
-*/.idea
+target/
+test-output/
+libs/
