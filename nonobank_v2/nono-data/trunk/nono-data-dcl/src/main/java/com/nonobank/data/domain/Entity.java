@@ -7,6 +7,7 @@ package com.nonobank.data.domain;
 
 import com.google.common.collect.ImmutableMap;
 import org.springframework.data.domain.Persistable;
+import org.springframework.data.repository.CrudRepository;
 
 import javax.annotation.Nonnull;
 import java.io.Serializable;
@@ -23,7 +24,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  *
  * @author Fuchun
  * @since 2.0
- * @version $Id: Entity.java 291 2014-10-27 08:49:07Z fuchun $
+ * @version $Id: Entity.java 303 2014-10-30 01:16:32Z fuchun $
  */
 public interface Entity<ID extends Serializable & Comparable<ID>, E extends Entity<ID, E>>
         extends Persistable<ID> {
@@ -99,5 +100,18 @@ public interface Entity<ID extends Serializable & Comparable<ID>, E extends Enti
         checkArgument((e.getId() != null && getId() != null &&
                 !e.getId().equals(getId())), "!e.getId().equals(getId())");
         return e;
+    }
+
+    public default <S extends E> S save() {
+        // do nothing
+        return null;
+    }
+
+    public default void delete() {
+        // do nothing
+    }
+
+    public default CrudRepository<E, ID> repository() {
+        return null;
     }
 }

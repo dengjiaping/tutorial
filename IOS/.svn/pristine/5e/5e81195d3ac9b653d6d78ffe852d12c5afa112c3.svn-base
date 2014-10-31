@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NNBHomeViewController">
+            <connections>
+                <outlet property="CustomerService" destination="XFn-jl-Q7g" id="nLg-Qf-blf"/>
+                <outlet property="loginOrRigister" destination="iWy-bM-3p8" id="nsM-rs-kVV"/>
+                <outlet property="loginRegBtn" destination="iWy-bM-3p8" id="WKa-ij-v7s"/>
+                <outlet property="repayBtn" destination="qkj-FG-4Rz" id="xsK-WQ-4Gc"/>
+                <outlet property="setting" destination="MFy-wt-CSS" id="9FP-DI-cSD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mHY-2L-6y1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X8m-9A-Tbp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
+                    <color key="backgroundColor" red="0.38431376218795776" green="0.64705884456634521" blue="0.31764706969261169" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="266" id="Z70-uo-26X"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomePage_Circle_Bg_Image" translatesAutoresizingMaskIntoConstraints="NO" id="w72-tL-jua">
+                    <rect key="frame" x="96" y="44" width="128" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage_Logo_Bg_Btn" translatesAutoresizingMaskIntoConstraints="NO" id="tV7-sF-zlG">
+                    <rect key="frame" x="115" y="80" width="91" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="HLe-cH-sa4"/>
+                        <constraint firstAttribute="height" constant="55" id="SqH-tl-icz"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ry7-EQ-9jp">
+                    <rect key="frame" x="0.0" y="266" width="320" height="302"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Khj-J5-70C">
+                            <rect key="frame" x="0.0" y="265" width="320" height="37"/>
+                            <color key="backgroundColor" red="0.93333339691162109" green="0.93333339691162109" blue="0.93333339691162109" alpha="1" colorSpace="deviceRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomePage_Setting_Bg_Btn" translatesAutoresizingMaskIntoConstraints="NO" id="MFy-wt-CSS">
+                            <rect key="frame" x="17" y="273" width="23" height="23"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="客服电话 400-888-888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKq-Bf-PqW">
+                            <rect key="frame" x="196" y="274" width="172" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.38431372549999998" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="设置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS0-gs-9Eb">
+                            <rect key="frame" x="48" y="273" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.38431372549019605" green="0.38431372549019605" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3c-5Z-dPa">
+                            <rect key="frame" x="17" y="159" width="81" height="77"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="HomePage_InfoCenter_Bg_Btn">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="infoCenter:" destination="-1" eventType="touchUpInside" id="hqi-Md-Lb0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkj-FG-4Rz">
+                            <rect key="frame" x="17" y="35" width="287" height="83"/>
+                            <color key="backgroundColor" red="0.96078437566757202" green="0.46666669845581055" blue="0.37647062540054321" alpha="1" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="fBS-vU-XUA"/>
+                            </constraints>
+                            <state key="normal" title="立即还款">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goToRepay:" destination="-1" eventType="touchUpInside" id="pA2-dJ-u8k"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9z-cy-0mD">
+                            <rect key="frame" x="120" y="159" width="81" height="77"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="HomePage_Recharge_Bg_Btn">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goToRecharge:" destination="-1" eventType="touchUpInside" id="rFs-4D-lGA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCL-S8-3yF">
+                            <rect key="frame" x="216" y="159" width="81" height="77"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="HomePage_FeedBack_Bg_Btn">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="feedback:" destination="-1" eventType="touchUpInside" id="Bgc-qJ-aBb"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomePage_Phone_Bg_Btn" translatesAutoresizingMaskIntoConstraints="NO" id="XFn-jl-Q7g">
+                            <rect key="frame" x="170" y="274" width="23" height="23"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9803922176361084" green="0.9803922176361084" blue="0.9803922176361084" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qkj-FG-4Rz" secondAttribute="trailing" constant="16" id="4HB-3Y-rfh"/>
+                        <constraint firstItem="qkj-FG-4Rz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ry7-EQ-9jp" secondAttribute="top" constant="35" id="8yW-hl-jaN"/>
+                        <constraint firstItem="qkj-FG-4Rz" firstAttribute="top" secondItem="ry7-EQ-9jp" secondAttribute="top" constant="35" id="D7O-SA-bL6"/>
+                        <constraint firstItem="qkj-FG-4Rz" firstAttribute="leading" secondItem="ry7-EQ-9jp" secondAttribute="leading" constant="17" id="gwd-Yr-PNK"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWy-bM-3p8">
+                    <rect key="frame" x="18" y="189" width="284" height="39"/>
+                    <color key="backgroundColor" red="0.5058823823928833" green="0.71764707565307617" blue="0.45490199327468872" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="登录/注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="2cL-c1-VLY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="X8m-9A-Tbp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Pf-Op-K1A"/>
+                <constraint firstItem="ry7-EQ-9jp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5ID-19-Jh6"/>
+                <constraint firstItem="ry7-EQ-9jp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7sh-cG-0pV"/>
+                <constraint firstItem="X8m-9A-Tbp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="N5b-K2-Osq"/>
+                <constraint firstItem="ry7-EQ-9jp" firstAttribute="top" secondItem="X8m-9A-Tbp" secondAttribute="bottom" id="QTb-n3-dFz"/>
+                <constraint firstAttribute="trailing" secondItem="ry7-EQ-9jp" secondAttribute="trailing" id="VuW-4P-lYh"/>
+                <constraint firstAttribute="centerX" secondItem="tV7-sF-zlG" secondAttribute="centerX" constant="-0.5" id="W2z-Qc-uRh"/>
+                <constraint firstAttribute="bottom" secondItem="ry7-EQ-9jp" secondAttribute="bottom" id="awR-e2-azP"/>
+                <constraint firstAttribute="trailing" secondItem="X8m-9A-Tbp" secondAttribute="trailing" id="fLN-tN-dra"/>
+                <constraint firstAttribute="bottom" secondItem="ry7-EQ-9jp" secondAttribute="bottom" id="uJK-cu-2eJ"/>
+                <constraint firstItem="tV7-sF-zlG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="usj-Iz-6KT"/>
+                <constraint firstAttribute="bottom" secondItem="ry7-EQ-9jp" secondAttribute="bottom" id="xit-t7-171"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-1965" y="172"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="6.jpg" width="640" height="1136"/>
+        <image name="HomePage_Circle_Bg_Image" width="127" height="127"/>
+        <image name="HomePage_FeedBack_Bg_Btn" width="85" height="85"/>
+        <image name="HomePage_InfoCenter_Bg_Btn" width="85" height="85"/>
+        <image name="HomePage_Logo_Bg_Btn" width="91" height="55"/>
+        <image name="HomePage_Phone_Bg_Btn" width="23" height="23"/>
+        <image name="HomePage_Recharge_Bg_Btn" width="85" height="85"/>
+        <image name="HomePage_Setting_Bg_Btn" width="23" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

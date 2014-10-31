@@ -6,13 +6,12 @@
 package com.nonobank.user.domain.core;
 
 import com.google.common.base.MoreObjects;
-import org.joda.time.DateTime;
 
 /**
  * 用户关键数据信息实体。
  *
  * @author fuchun
- * @version $Id: UserStats.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserStats.java 317 2014-10-30 09:20:04Z yichuan $
  * @since 2.0
  */
 public class UserStats extends BaseUser<UserStats> {
@@ -40,16 +39,13 @@ public class UserStats extends BaseUser<UserStats> {
     }
 
     public UserStats(Long userId, Integer totalScore, Integer currScore,
-                     Integer borrowCount, Integer rejectedCount, Integer biddingCount,
-                     DateTime lastModifiedDate, DateTime createdDate) {
+                     Integer borrowCount, Integer rejectedCount, Integer biddingCount) {
         setUserId(userId);
         this.totalScore = totalScore;
         this.currScore = currScore;
         this.borrowCount = borrowCount;
         this.rejectedCount = rejectedCount;
         this.biddingCount = biddingCount;
-        setLastModifiedDate(lastModifiedDate);
-        setCreatedDate(createdDate);
     }
 
     public Integer getTotalScore() {

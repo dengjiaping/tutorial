@@ -20,7 +20,7 @@ import static com.nonobank.user.facade.dto.core.UserModel.*;
  * {@code UserModel} 属性校验器。
  *
  * @author fuchun
- * @version $Id: UserModelValidator.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserModelValidator.java 306 2014-10-30 02:54:16Z fuchun $
  * @since 2.0
  */
 @Component
@@ -40,8 +40,8 @@ public class UserModelValidator implements Validator {
                 "user.v.userName.required", "用户名不能为空");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, PROP_MOBILE_NO,
                 "user.v.mobileNO.required", "手机号码不能为空");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, PROP_MOBILE_CAPTCHA,
-                "user.v.mobileCaptcha.required", "请输入手机验证码");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, PROP_SMS_CAPTCHA,
+                "user.v.smsCaptcha.required", "请输入手机验证码");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, PROP_PASSWORD1,
                 "user.v.password1.required", "登录密码不能为空");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, PROP_PASSWORD2,
@@ -55,8 +55,8 @@ public class UserModelValidator implements Validator {
                         "user.v.userName.length", "用户名由6~20个英文、数字或下划线组成");
             }
         }
-        if (user.getMobileNo() != null) {
-            if (!CHINA_MOBILE.matcher(user.getMobileNo()).matches()) {
+        if (user.getMobileNO() != null) {
+            if (!CHINA_MOBILE.matcher(user.getMobileNO()).matches()) {
                 // 目前只支持中国大陆手机号码
                 errors.rejectValue(PROP_MOBILE_NO,
                         "user.v.mobileNO.formatter", "手机号码输入错误");

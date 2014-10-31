@@ -1,0 +1,6 @@
+package com.nonobank.bean;
+
+public class BankCardInfo {
+	public String bankName; //银行卡所在行名称
+	public String bankNum; //卡号
+}

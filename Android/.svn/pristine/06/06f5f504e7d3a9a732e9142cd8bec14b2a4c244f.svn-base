@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/repaytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/status"
+        android:layout_alignBottom="@+id/status"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="还款时间 : " />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="79dp"
+        android:layout_marginTop="20dp"
+        android:text="状态 : " />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/status"
+        android:layout_alignBottom="@+id/status"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text=" 已还款"
+        android:textColor="#60a64d"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_penal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/penal"
+        android:layout_toRightOf="@+id/penal"
+        
+        android:text=" ¥0.00"
+        android:textColor="#e60012"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/penal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/amount"
+        android:layout_alignBottom="@+id/amount"
+        android:layout_alignRight="@+id/status"
+        android:text="罚息违约金 : " />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/amount"
+        android:layout_toRightOf="@+id/repaytime"
+        android:text="2014-10-29" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/amount"
+        android:layout_alignBottom="@+id/amount"
+        android:layout_toRightOf="@+id/repaytime"
+        android:text="¥5000.00"
+        android:textSize="15sp"
+        android:textColor="#e60012" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/repaytime"
+        android:layout_below="@+id/tv_status"
+        android:layout_marginTop="25dp"
+        android:text="还款金额 : " />
+
+    <TextView
+        android:id="@+id/tv_real_repaytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_penal"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/realrepaytime"
+        android:text="2014-10-30" />
+
+    <TextView
+        android:id="@+id/realrepaytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_real_repaytime"
+        android:layout_alignBottom="@+id/tv_real_repaytime"
+        android:layout_alignLeft="@+id/amount"
+        android:text="实际还款时间 : " />
+
+</RelativeLayout>

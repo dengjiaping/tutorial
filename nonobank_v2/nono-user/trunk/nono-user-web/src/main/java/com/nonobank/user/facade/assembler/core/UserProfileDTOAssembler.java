@@ -6,13 +6,14 @@
 package com.nonobank.user.facade.assembler.core;
 
 import com.nonobank.user.domain.core.UserProfile;
+import com.nonobank.user.domain.dict.Exist;
 import com.nonobank.user.facade.assembler.dict.DictDTOAssembler;
 import com.nonobank.user.facade.assembler.AbstractAssembler;
 import com.nonobank.user.facade.dto.core.UserProfileDTO;
 
 /**
  * @author Yichuan
- * @version $Id: UserProfileDTOAssembler.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: UserProfileDTOAssembler.java 315 2014-10-30 08:24:25Z yichuan $
  * @since 2.0
  */
 public class UserProfileDTOAssembler extends AbstractAssembler<UserProfile, UserProfileDTO> {
@@ -23,6 +24,12 @@ public class UserProfileDTOAssembler extends AbstractAssembler<UserProfile, User
     public UserProfileDTO toDTO(UserProfile entity) {
         if (entity == null)
             return null;
+        Exist social = entity.getSocialSecurity();
+        if (social == null) social = Exist.UNKNOWN;
+        Exist passport = entity.getPassport();
+        if (passport == null) passport = Exist.UNKNOWN;
+        Exist driving = entity.getDriving();
+        if (driving == null) driving = Exist.UNKNOWN;
         return new UserProfileDTO(
                 entity.getUserId(), entity.getUserName(), entity.getHashedKey(),
                 entity.getEnglishName(), entity.getFormerName(), entity.getMobileNO(),
@@ -35,9 +42,8 @@ public class UserProfileDTOAssembler extends AbstractAssembler<UserProfile, User
                 DictDTOAssembler.ASSEMBLER.toDTO(entity.getEducation()),
                 DictDTOAssembler.ASSEMBLER.toDTO(entity.getPosition()),
                 DictDTOAssembler.ASSEMBLER.toDTO(entity.getSkillCert()),
-                entity.getSocialSecurity().getBool(), entity.getPassport().getBool(),
-                entity.getDriving().getBool(), entity.getUserType(), entity.getUserTypeTime(),
-                entity.getLastModifiedDate(), entity.getCreatedDate()
+                social.getBool(), passport.getBool(), driving.getBool(), entity.getUserType(),
+                entity.getUserTypeTime(), entity.getLastModifiedDate(), entity.getCreatedDate()
         );
     }
 

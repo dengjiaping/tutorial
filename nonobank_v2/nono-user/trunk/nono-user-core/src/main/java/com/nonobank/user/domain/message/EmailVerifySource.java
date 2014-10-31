@@ -6,16 +6,20 @@
 package com.nonobank.user.domain.message;
 
 import com.google.common.base.MoreObjects;
+import com.google.common.hash.Hasher;
+import com.google.common.hash.Hashing;
 import com.nonobank.data.domain.AbstractRecording;
 import com.nonobank.data.domain.RecordStatus;
 import com.nonobank.user.domain.exception.UserException;
 import org.joda.time.DateTime;
 
+import java.nio.charset.StandardCharsets;
+
 /**
  * 邮件验证(链接)信息
  *
  * @author Yichuan
- * @version $Id: EmailVerifySource.java 289 2014-10-27 08:46:50Z fuchun $
+ * @version $Id: EmailVerifySource.java 316 2014-10-30 09:19:40Z yichuan $
  * @since 2.0
  */
 public class EmailVerifySource extends AbstractRecording<Long, EmailVerifySource> {
@@ -46,6 +50,22 @@ public class EmailVerifySource extends AbstractRecording<Long, EmailVerifySource
 
     // empty constructor
     public EmailVerifySource() {
+    }
+
+    public EmailVerifySource(Long userId, BusinessType type, String token, String content,
+                             Long deadline, Integer useTimes, RecordStatus status) {
+        this.userId = userId;
+        this.type = type;
+        this.token = token;
+        this.content = content;
+        this.deadline = deadline;
+        this.useTimes = useTimes;
+        this.status = status;
+    }
+
+    public static EmailVerifySource create(Long userId, BusinessType type, String content,
+                                           Long deadline, Integer useTimes, RecordStatus status) {
+        return new EmailVerifySource(userId, type, doToken(content), content, deadline, useTimes, status);
     }
 
     public Long getUserId() {
@@ -114,6 +134,17 @@ public class EmailVerifySource extends AbstractRecording<Long, EmailVerifySource
                 .add(PROP_DEADLINE, getDeadline())
                 .add(PROP_USE_TIMES, getUseTimes())
                 .add(PROP_STATUS, getStatus()).toString();
+    }
+
+    /**
+     * 获取加密token
+     *
+     * @param content 链接内容
+     */
+    public static String doToken(String content) {
+        Hasher hasher = Hashing.md5().newHasher();
+        hasher.putString(content, StandardCharsets.UTF_8);
+        return hasher.hash().toString();
     }
 
     /**

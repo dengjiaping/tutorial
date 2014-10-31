@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        >
+
+        <ImageView
+            android:id="@+id/iv_repay_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/repay_bg"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_alignTop="@id/iv_repay_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="普通还款"
+                android:textColor="#f7775c"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="8月未还款"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="￥1000"
+                android:textColor="#60a64d"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/tv_days"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="距还款日还有3天"
+                android:layout_marginBottom="5dp"
+                android:textColor="#535353"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tv_benxi"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="应还本息:5000元"
+                android:layout_marginBottom="5dp"
+                android:textColor="#535353"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tv_faxi"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="当前罚息:300元"
+                android:layout_marginBottom="5dp"
+                android:textColor="#535353"
+                android:textSize="16sp"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+  <!--   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即还款"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue_fillet"
+            android:layout_toStartOf="@+id/button"
+            android:layout_marginRight="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即还款"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue_fillet"
+            android:layout_marginRight="85dp"
+            android:id="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        </RelativeLayout> -->
+</LinearLayout>

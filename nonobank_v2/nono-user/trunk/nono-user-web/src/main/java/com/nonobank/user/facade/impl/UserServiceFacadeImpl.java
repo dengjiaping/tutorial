@@ -6,21 +6,22 @@
 package com.nonobank.user.facade.impl;
 
 import com.nonobank.user.facade.UserServiceFacade;
+import com.nonobank.user.facade.dto.core.BaseUserModel;
 import com.nonobank.user.facade.dto.core.UserAccountDTO;
-import com.nonobank.user.facade.dto.core.UserModel;
-import com.nonobank.user.service.UserService;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  *
  *
  * @author fuchun
- * @version $Id: UserServiceFacadeImpl.java 298 2014-10-29 03:05:00Z fuchun $
+ * @version $Id: UserServiceFacadeImpl.java 307 2014-10-30 03:04:06Z fuchun $
  * @since 2.0
  */
 @Component("userServiceFacade")
 public class UserServiceFacadeImpl implements UserServiceFacade {
 
+    @Override
+    public <T extends BaseUserModel> UserAccountDTO createUser(T userModel) {
+        return null;
+    }
 }

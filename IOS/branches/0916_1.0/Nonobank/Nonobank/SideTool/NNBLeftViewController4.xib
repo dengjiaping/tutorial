@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NNBLeftViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="cU4-ol-nL1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuU-VD-0Mj">
+                    <rect key="frame" x="95" y="30" width="77" height="76"/>
+                    <color key="backgroundColor" red="0.37838765559999998" green="1" blue="0.1087182989" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="image">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isk-qH-0zG">
+                    <rect key="frame" x="195" y="59" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.19413701210000001" green="0.16390184229999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="call">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="phoneCall:" destination="-1" eventType="touchUpInside" id="Lya-FQ-Ckd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRM-TG-mXL">
+                    <rect key="frame" x="33" y="428" width="42" height="21"/>
+                    <color key="backgroundColor" red="0.24001237419999999" green="1" blue="0.225896237" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipt-We-RQA">
+                    <rect key="frame" x="112" y="428" width="42" height="21"/>
+                    <color key="backgroundColor" red="0.28447967470000002" green="1" blue="0.25046679919999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-6J-9Oo">
+                    <rect key="frame" x="192" y="428" width="42" height="21"/>
+                    <color key="backgroundColor" red="0.30332533769999998" green="1" blue="0.28398291219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wp-4o-qXi">
+                    <rect key="frame" x="19" y="326" width="72" height="70"/>
+                    <color key="backgroundColor" red="0.28282728080000002" green="1" blue="0.25725717040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="InfoCenter">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToInfoCenter:" destination="-1" eventType="touchUpInside" id="wEe-Hu-QN4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syf-LM-FKd">
+                    <rect key="frame" x="178" y="326" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.29799982759999999" green="1" blue="0.25589471429999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="feedBack">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goTofeedBack:" destination="-1" eventType="touchUpInside" id="Z8X-PM-OIH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe9-e0-VMh">
+                    <rect key="frame" x="18" y="244" width="229" height="34"/>
+                    <color key="backgroundColor" red="1" green="0.27098431630000003" blue="0.1500660496" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Repayment"/>
+                    <connections>
+                        <action selector="loginAndRegister" destination="-1" eventType="touchUpInside" id="AcN-Nv-hNL"/>
+                        <action selector="recharge:" destination="-2" eventType="touchUpInside" id="IEz-1e-cnn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEZ-W8-PmX">
+                    <rect key="frame" x="19" y="160" width="229" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.27098431630000003" blue="0.1500660496" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="login/Register">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAndRegister:" destination="-2" eventType="touchUpInside" id="z4O-ok-sux"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-3C-z0P">
+                    <rect key="frame" x="29" y="59" width="47" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.19448835049999999" blue="0.92749182200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="setting">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToSetting:" destination="-1" eventType="touchUpInside" id="qyz-ps-V3x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3S-Dt-158">
+                    <rect key="frame" x="97" y="326" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.39644341360000002" green="1" blue="0.42041881710000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="recharge">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToRecharge:" destination="-1" eventType="touchUpInside" id="hzf-C4-pa7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="413" y="251"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

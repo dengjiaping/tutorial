@@ -1,0 +1,42 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UMFeedback.h"
+    #import "MobClick.h"
+    #import "MobClickSocialAnalytics.h"
+    #import "UIDefine.h"
+    #import "NNBBaseTableCell.h"
+    #import "NNBXibView.h"
+    #import "NNBUserIfShare.h"
+    #import "WTSDK.h"
+    #import "NNBUserCenter.h"
+    #import "NNBAuthNavigationController.h"
+    #import "NNBCardCenter.h"
+    #import "UIColor+NNBK.h"
+    #import "NNBBaseViewController.h"
+    #import <CoreLocation/CoreLocation.h>
+    #import "BMapKit.h"
+    #import "NSDate+CO.h"
+    #import "NNBBaseTableCell.h"
+#endif
+
+#define IPHONE_5 (fabs((double)[[UIScreen mainScreen] bounds].size.height-(double)568) < DBL_EPSILON)
+
+#define UMENG_APPKEY @"54195380fd98c5afeb008842"
+
+
+#import "WTSDK.h"
+#import "NSString+NNBK.h"
+#import "NSString+NNBDate.h"

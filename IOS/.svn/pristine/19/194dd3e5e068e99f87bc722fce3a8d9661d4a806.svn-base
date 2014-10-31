@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NNBRepaymentViewController">
+            <connections>
+                <outlet property="leftArrowBtn" destination="fiT-vt-yyw" id="SHq-03-fVr"/>
+                <outlet property="listTable" destination="ZXr-Kd-NcT" id="ySa-vf-xST"/>
+                <outlet property="rightArrowBtn" destination="GOQ-v4-csy" id="ha8-La-Olv"/>
+                <outlet property="topScrollView" destination="cbs-kp-S0e" id="WOK-ap-9kb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbs-kp-S0e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="267" id="mMV-1C-xth"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiT-vt-yyw">
+                    <rect key="frame" x="15" y="123" width="17" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="left_arrow_light_bg_btn">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="leftAction:" destination="-1" eventType="touchUpInside" id="QYk-CR-JGL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOQ-v4-csy">
+                    <rect key="frame" x="287" y="123" width="17" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="right_arrow_light_bg_btn">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightAction:" destination="-1" eventType="touchUpInside" id="X1j-x4-Uf6"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZXr-Kd-NcT">
+                    <rect key="frame" x="0.0" y="267" width="320" height="301"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lPB-lp-oZx"/>
+                        <outlet property="delegate" destination="-1" id="86e-Gg-8aT"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZXr-Kd-NcT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2X4-LR-9eq"/>
+                <constraint firstAttribute="trailing" secondItem="ZXr-Kd-NcT" secondAttribute="trailing" id="3nw-1n-Lf3"/>
+                <constraint firstAttribute="bottom" secondItem="ZXr-Kd-NcT" secondAttribute="bottom" id="aDZ-Nq-p3v"/>
+                <constraint firstItem="cbs-kp-S0e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cgT-kV-r7T"/>
+                <constraint firstItem="cbs-kp-S0e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dLW-J1-an0"/>
+                <constraint firstItem="ZXr-Kd-NcT" firstAttribute="top" secondItem="cbs-kp-S0e" secondAttribute="bottom" id="h1L-4y-i8a"/>
+                <constraint firstAttribute="trailing" secondItem="cbs-kp-S0e" secondAttribute="trailing" id="qNQ-Fv-Kim"/>
+            </constraints>
+            <point key="canvasLocation" x="-2395" y="-521"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left_arrow_light_bg_btn" width="17" height="29"/>
+        <image name="right_arrow_light_bg_btn" width="17" height="29"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

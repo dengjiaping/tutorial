@@ -1,0 +1,169 @@
+package com.nonobank.http.imple;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.Request.Method;
+import com.android.volley.Response.ErrorListener;
+import com.android.volley.Response.Listener;
+import com.android.volley.toolbox.GsonRequest;
+import com.nonobank.bean.CommonResponseInfo;
+import com.nonobank.bean.RepayListResponse;
+import com.nonobank.bean.BorrowListInfo;
+import com.nonobank.common.utils.LogUtils;
+import com.nonobank.constant.NetConstantValue;
+import com.nonobank.http.RepayEngine;
+import com.nonobank.http.imple.UserEngineImpl.CommonErrorListener;
+import com.nonobank.manager.BaseApplication;
+import com.nonobank.utils.UIUtils;
+import com.nonobank.utils.VolleyUtils;
+
+public class RepayEngineImpl implements RepayEngine {
+
+	private RequestQueue mRequestQueue; // 网络请求队列
+	private String url;
+
+	public RepayEngineImpl() {
+		mRequestQueue = VolleyUtils.getInstance(BaseApplication.getApplication())
+				.getmRequestQueue();
+	}
+
+	/** 获取还款账单信息 */
+	@Override
+	public void getRepaymentBills(final String sessionId, final String type, final String pageSize,
+			final String pageNumber, Listener<RepayListResponse> successListener) {
+		url = NetConstantValue.HOST_URL + NetConstantValue.getRepaymentBills;
+		LogUtils.d(url);
+		GsonRequest<RepayListResponse> gsonRequest = new GsonRequest<RepayListResponse>(
+				Method.POST, url, RepayListResponse.class, successListener,
+				new CommonErrorListener()) {
+			// post参数
+			@Override
+			protected Map<String, String> getParams() throws AuthFailureError {
+				Map<String, String> map = new HashMap<String, String>();
+				map.put("sessionId", sessionId);
+				map.put("type", type);
+				map.put("pageSize", pageSize);
+				map.put("pageNumber", pageNumber);
+				return map;
+			}
+
+		};
+		// 加入队列,勿忘
+		mRequestQueue.add(gsonRequest);
+
+	}
+
+	/** 获取账号信息 */
+	@Override
+	public void getAsset(final String sessionId, Listener<CommonResponseInfo> successListener) {
+		url = NetConstantValue.HOST_URL + NetConstantValue.getAsset;
+		LogUtils.d(url);
+		GsonRequest<CommonResponseInfo> gsonRequest = new GsonRequest<CommonResponseInfo>(
+				Method.POST, url, CommonResponseInfo.class, successListener,
+				new CommonErrorListener()) {
+			// post参数
+			@Override
+			protected Map<String, String> getParams() throws AuthFailureError {
+				Map<String, String> map = new HashMap<String, String>();
+				map.put("sessionId", sessionId);
+				return map;
+			}
+
+		};
+		// 加入队列,勿忘
+		mRequestQueue.add(gsonRequest);
+	}
+
+	/** 还款 */
+	@Override
+	public void payMoney(final String sessionId, final String br_id,
+			Listener<CommonResponseInfo> successListener) {
+		url = NetConstantValue.HOST_URL + NetConstantValue.payMoney;
+		LogUtils.d(url);
+		GsonRequest<CommonResponseInfo> gsonRequest = new GsonRequest<CommonResponseInfo>(
+				Method.POST, url, CommonResponseInfo.class, successListener,
+				new CommonErrorListener()) {
+			// post参数
+			@Override
+			protected Map<String, String> getParams() throws AuthFailureError {
+				Map<String, String> map = new HashMap<String, String>();
+				map.put("sessionId", sessionId);
+				map.put("br_id", br_id);
+				return map;
+			}
+
+		};
+		// 加入队列,勿忘
+		mRequestQueue.add(gsonRequest);
+	}
+
+	/** 提前还款 */
+	@Override
+	public void reAdvanceMoney(final String sessionId, final String bo_id,
+			Listener<CommonResponseInfo> successListener) {
+		url = NetConstantValue.HOST_URL + NetConstantValue.reAdvanceMoney;
+		LogUtils.d(url);
+		GsonRequest<CommonResponseInfo> gsonRequest = new GsonRequest<CommonResponseInfo>(
+				Method.POST, url, CommonResponseInfo.class, successListener,
+				new CommonErrorListener()) {
+			// post参数
+			@Override
+			protected Map<String, String> getParams() throws AuthFailureError {
+				Map<String, String> map = new HashMap<String, String>();
+				map.put("sessionId", sessionId);
+				map.put("bo_id", bo_id);
+				return map;
+			}
+
+		};
+		// 加入队列,勿忘
+		mRequestQueue.add(gsonRequest);
+	}
+	/**
+	 * 获取用户借款列表
+	 */
+	@Override
+	public void getBorrowList(final String sessionId, final String pageSize,
+			final String pageNumber, Listener<BorrowListInfo> successListener) {
+		url = NetConstantValue.HOST_URL + NetConstantValue.borrowList;
+		LogUtils.d(url);
+		GsonRequest<BorrowListInfo> gsonRequest = new GsonRequest<BorrowListInfo>(
+				Method.POST, url, BorrowListInfo.class, successListener,
+				new CommonErrorListener()) {
+			// post参数
+			@Override
+			protected Map<String, String> getParams() throws AuthFailureError {
+				Map<String, String> map = new HashMap<String, String>();
+				map.put("sessionId", sessionId);
+				map.put("pageSize", pageSize);
+				map.put("pageNumber", pageNumber);
+				return map;
+			}
+
+		};
+		// 加入队列,勿忘
+		mRequestQueue.add(gsonRequest);
+	}
+	
+	/**
+	 * 请求失败通用的回调
+	 * 
+	 * @author mio
+	 * 
+	 */
+	class CommonErrorListener implements ErrorListener {
+
+		@Override
+		public void onErrorResponse(VolleyError error) {
+			LogUtils.d("访问失败");
+			UIUtils.showToastSafe("访问失败,请检查网络是否畅通");
+		}
+	}
+
+
+	
+}

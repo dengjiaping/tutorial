@@ -1,0 +1,3 @@
+UserEngineImpl为UserEngine的实现类
+创建对象通过BeanFactory来创建
+定义新的Engine需要在congfig文件中的bean.properties中配置

@@ -985,7 +985,7 @@
         <junit.version>4.11</junit.version>
         <easymock.version>3.0</easymock.version>
         <spring.version>3.2.11.RELEASE</spring.version>
-        <spring4.version>4.1.1.RELEASE</spring4.version>
+        <spring4.version>4.1.0.RELEASE</spring4.version>
         <spring.data.commons.version>1.8.0.RELEASE</spring.data.commons.version>
         <spring.data.redis.version>1.3.0.RELEASE</spring.data.redis.version>
         <spring.jdbc.ext.version>1.1.0.M1</spring.jdbc.ext.version>

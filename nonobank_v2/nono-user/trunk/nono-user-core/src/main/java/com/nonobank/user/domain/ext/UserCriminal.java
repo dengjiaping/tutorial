@@ -12,7 +12,7 @@ import com.nonobank.data.domain.AbstractRecording;
  * 用户刑侦查询信息
  *
  * @author Yichuan
- * @version $Id: UserCriminal.java 300 2014-10-29 08:32:39Z yichuan $
+ * @version $Id: UserCriminal.java 317 2014-10-30 09:20:04Z yichuan $
  * @since 2.0
  */
 public class UserCriminal extends AbstractRecording<Long, UserCriminal> {
@@ -29,6 +29,30 @@ public class UserCriminal extends AbstractRecording<Long, UserCriminal> {
 
     public UserCriminal() {
         super();
+    }
+
+    // full constructor
+    public UserCriminal(Long userId, String userName, String criminalStatus, String criminalInfo) {
+        this.userId = userId;
+        this.userName = userName;
+        this.criminalStatus = criminalStatus;
+        this.criminalInfo = criminalInfo;
+    }
+
+    public static UserCriminal create(Long userId, String userName, String criminalStatus, String criminalInfo) {
+        return new UserCriminal(userId, userName, criminalStatus, criminalInfo);
+    }
+
+    /**
+     * 更新刑侦状态
+     *
+     * @param criminalStatus    状态
+     * @param criminalInfo      描述
+     */
+    public UserCriminal updateStatus(String criminalStatus, String criminalInfo) {
+        setCriminalStatus(criminalStatus);
+        setCriminalInfo(criminalInfo);
+        return this;
     }
 
     public Long getUserId() {

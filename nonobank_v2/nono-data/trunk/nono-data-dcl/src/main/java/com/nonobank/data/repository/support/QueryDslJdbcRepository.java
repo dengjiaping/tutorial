@@ -21,9 +21,11 @@ import com.mysema.query.types.Predicate;
 import com.mysema.query.types.Projections;
 import com.mysema.query.types.expr.SimpleExpression;
 import com.nonobank.data.domain.Entity;
+import com.nonobank.data.domain.Recording;
 import com.nonobank.data.jdbc.query.JavaBeanPropertyRowMapper;
 import com.nonobank.data.jdbc.query.QueryDslJdbcTemplate;
 import com.nonobank.data.repository.QueryDslRepository;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.support.DefaultConversionService;
@@ -41,6 +43,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -48,7 +51,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * QueryDSL jdbc repository implementation.
  *
  * @author fuchun
- * @version $Id: QueryDslJdbcRepository.java 291 2014-10-27 08:49:07Z fuchun $
+ * @version $Id: QueryDslJdbcRepository.java 311 2014-10-30 05:23:12Z fuchun $
  * @since 2.0
  */
 public class QueryDslJdbcRepository<E extends Entity<ID, E>, ID extends Serializable & Comparable<ID>>
@@ -299,6 +302,11 @@ public class QueryDslJdbcRepository<E extends Entity<ID, E>, ID extends Serializ
                 throw new InvalidDataAccessResourceUsageException(
                         "The entity's ID must not be null.");
         }
+        if (entity instanceof Recording) {
+            Recording recording = (Recording) entity;
+            recording.setLastModifiedDate(DateTime.now());
+            recording.setCreatedDate(DateTime.now());
+        }
         if (withKey) {
             ID id = queryDslJdbcTemplate.insertWithKey(getEntityPath(),
                     insert -> insert.populate(entity, BeanMapper.WITH_NULL_BINDINGS)
@@ -325,6 +333,10 @@ public class QueryDslJdbcRepository<E extends Entity<ID, E>, ID extends Serializ
      */
     @SuppressWarnings("unchecked")
     public <S extends E> S update(final S entity) {
+        Objects.requireNonNull(entity, "entity");
+        if (entity instanceof Recording) {
+            ((Recording) entity).setLastModifiedDate(DateTime.now());
+        }
         queryDslJdbcTemplate.update(getEntityPath(),
                 update -> update.populate(entity, BeanMapper.DEFAULT)
                         .where(primaryKeyPredicate(entity.getId()))
@@ -345,10 +357,12 @@ public class QueryDslJdbcRepository<E extends Entity<ID, E>, ID extends Serializ
                 result.add(updatedEntity);
             }
         }
+
         return result;
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public E findOne(ID id) {
         checkEntityIdNotNull(id);
         return findOne(primaryKeyPredicate(id));

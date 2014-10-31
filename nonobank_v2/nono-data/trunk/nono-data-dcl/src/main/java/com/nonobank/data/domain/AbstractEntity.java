@@ -6,6 +6,7 @@
 package com.nonobank.data.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.data.repository.CrudRepository;
 
 import java.io.Serializable;
 
@@ -14,13 +15,15 @@ import java.io.Serializable;
  * {@link #equals(Object)} and {@link #hashCode()} based on that id.
  *
  * @author fuchun
- * @version $Id: AbstractEntity.java 291 2014-10-27 08:49:07Z fuchun $
+ * @version $Id: AbstractEntity.java 303 2014-10-30 01:16:32Z fuchun $
  * @since 2.0
  */
 public abstract class AbstractEntity<PK extends Serializable & Comparable<PK>, E extends AbstractEntity<PK, E>>
         implements Entity<PK, E> {
 
     private static final long serialVersionUID = 1L;
+
+    private transient CrudRepository<E, PK> repository;
 
     private PK id;
 
@@ -53,6 +56,33 @@ public abstract class AbstractEntity<PK extends Serializable & Comparable<PK>, E
     @JsonIgnore
     public boolean isNew() {
         return getId() == null;
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public <S extends E> S save() {
+        if (repository() != null) {
+            Entity<PK, E> entity = this;
+            return repository().save((S) entity);
+        }
+        return null;
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public void delete() {
+        if (repository() != null) {
+            repository().delete(getId());
+        }
+    }
+
+    @Override
+    public CrudRepository<E, PK> repository() {
+        return repository;
+    }
+
+    public void setRepository(CrudRepository<E, PK> repository) {
+        this.repository = repository;
     }
 
     @Override

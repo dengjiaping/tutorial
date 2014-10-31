@@ -1,0 +1,71 @@
+//
+//  NNBFindPayPasswordViewController.m
+//  Nonobank
+//
+//  Created by DYDong on 14-10-30.
+//  Copyright (c) 2014年 xiubo. All rights reserved.
+//
+
+#import "NNBFindPayPasswordViewController.h"
+
+#import "WTSDK.h"
+#import "NSString+NNBK.h"
+#import "NSString+NNBDate.h"
+
+@interface NNBFindPayPasswordViewController ()
+
+@end
+
+@implementation NNBFindPayPasswordViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"找回密码";
+    self.getiPhoneCode.layer.cornerRadius = 5;
+    self.submit.layer.cornerRadius = 10;
+    self.getiPhoneCode.backgroundColor = [UIColor colorWithHexString:@"#87d6e5"];
+    self.submit.backgroundColor = [UIColor colorWithHexString:@"#ffa800"];
+    // Do any additional setup after loading the view from its nib.
+}
+- (void)jumpUptheData:(NSString *)string{
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:string delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"Ok", nil];
+    [alert show];
+    
+}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+- (IBAction)getCode:(id)sender {
+    [WTItemService nonoBankValidateMobile:self.iPhoneNumber.text header:[[NSString stringWithGetCurrentTime] md5]  successBlock:^(TMRequest *request) {
+        
+        NNBLoginModel *model = request.result;
+        [self jumpUptheData:model.msg];
+        
+        
+        
+    } failedBlock:^(TMRequest *request) {
+        
+        
+    }];
+}
+
+- (IBAction)sendPassword:(id)sender {
+    
+}
+@end

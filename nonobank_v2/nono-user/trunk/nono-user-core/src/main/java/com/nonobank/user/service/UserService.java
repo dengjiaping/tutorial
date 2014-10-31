@@ -5,17 +5,13 @@
 
 package com.nonobank.user.service;
 
-import com.nonobank.user.domain.core.UserAccount;
-import org.springframework.util.MultiValueMap;
-
 /**
  * 用户帐号业务接口。
  *
  * @author Yichuan
- * @version $Id: UserService.java 298 2014-10-29 03:05:00Z fuchun $
+ * @version $Id: UserService.java 306 2014-10-30 02:54:16Z fuchun $
  * @since 2.0
  */
 public interface UserService {
 
-    public UserAccount newUser(MultiValueMap<String, String> valueMap);
 }

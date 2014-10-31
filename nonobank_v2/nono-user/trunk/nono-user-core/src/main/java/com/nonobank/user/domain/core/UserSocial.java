@@ -16,7 +16,7 @@ import javax.annotation.Nonnull;
  * 第三方平台用户来源信息实体。
  *
  * @author fuchun
- * @version $Id: UserSocial.java 295 2014-10-28 08:01:18Z yichuan $
+ * @version $Id: UserSocial.java 317 2014-10-30 09:20:04Z yichuan $
  * @since 2.0
  */
 public class UserSocial extends AbstractRecording<Long, UserSocial> {
@@ -78,12 +78,8 @@ public class UserSocial extends AbstractRecording<Long, UserSocial> {
     }
 
     public static UserSocial create(Long userId, String userName, String openId, SocialSource socialSource,
-                                    String authToken, Long period, DateTime tokenUpdateTime,
-                                    DateTime lastModifiedDate, DateTime createdDate) {
-        UserSocial userSocial = new UserSocial(userId, userName, openId, socialSource, authToken, period, tokenUpdateTime);
-        userSocial.setLastModifiedDate(lastModifiedDate);
-        userSocial.setCreatedDate(createdDate);
-        return userSocial;
+                                    String authToken, Long period, DateTime tokenUpdateTime) {
+        return new UserSocial(userId, userName, openId, socialSource, authToken, period, tokenUpdateTime);
     }
 
     public Long getUserId() {

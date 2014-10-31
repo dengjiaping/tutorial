@@ -16,7 +16,7 @@ import javax.annotation.Nonnull;
  * 用户认证信息实体。
  *
  * @author fuchun
- * @version $Id: UserAuthc.java 296 2014-10-28 09:34:19Z yichuan $
+ * @version $Id: UserAuthc.java 317 2014-10-30 09:20:04Z yichuan $
  * @since 2.0
  */
 public class UserAuthc extends BaseUser<UserAuthc> {
@@ -308,9 +308,6 @@ public class UserAuthc extends BaseUser<UserAuthc> {
         UserAuthc userAuthc = new UserAuthc();
         userAuthc.setUserId(userId);
         userAuthc.setUserName(userName);
-        DateTime now = DateTime.now();
-        userAuthc.setLastModifiedDate(now);
-        userAuthc.setCreatedDate(now);
         return userAuthc;
     }
 

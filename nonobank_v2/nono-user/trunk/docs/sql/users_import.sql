@@ -1,7 +1,7 @@
 
 -- 重构前的数据导入重构后的数据库 - 用户系统
 -- created by Fuchun 2014-10-13
--- @(#) version $Id: users_import.sql 300 2014-10-29 08:32:39Z yichuan $
+-- @(#) version $Id: users_import.sql 312 2014-10-30 07:39:17Z yichuan $
 
 -- ---------------------------------------------------------------------------------
 -- 会员表数据处理
@@ -243,7 +243,7 @@ INSERT INTO USER_STUDENT
 
 -- 导入 USER_CRIMINAL 表数据
 ALTER TABLE `members_field_details`
-ADD INDEX `idx_mfd_criminal_status` (`m_criminal_status`) USING BTREE ;
+ADD INDEX `idx_mfd_criminal_status` (`m_criminal_status`) USING BTREE;
 
 INSERT INTO USER_CRIMINAL (USER_ID, USER_NAME, CRIMINAL_STATUS, CRIMINAL_INFO, LAST_MODIFIED_DATE, CREATED_DATE)
   (SELECT m.m_id, m.m_username, mf.m_criminal_status, mf.m_criminal_info, mf.m_criminal_deal_time, m.time FROM members m, members_field_details mf WHERE m.m_id = mf.m_id and mf.m_criminal_status is not null and mf.m_criminal_status != '');
